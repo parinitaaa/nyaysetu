@@ -1,3 +1,42 @@
-.env
-node_modules/
-cache/
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# =========================
+# Virtual Environment
+# =========================
+venv/
+.env/
+
+# =========================
+# FastAPI / Uvicorn
+# =========================
+*.log
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Local config overrides
+# =========================
+config/local_settings.py
+
+# =========================
+# Temporary / cache files
+# =========================
+.cache/
+pytest_cache/
