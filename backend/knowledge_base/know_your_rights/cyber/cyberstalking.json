@@ -1,0 +1,36 @@
+{
+  "rightId": "CYBER_STALK_002",
+  "title": "Right Against Cyberstalking",
+  "category": "CYBER_RIGHTS",
+  "slug": "cyberstalking",
+
+  "summary": "Repeated online harassment or surveillance is a punishable offence.",
+
+  "plainExplanation": {
+    "whatItMeans": "Persistent unwanted online contact is illegal.",
+    "whyItMatters": "Protects mental health and personal safety."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Indian Penal Code",
+        "section": "Section 354D"
+      }
+    ]
+  },
+
+  "exampleScenario": {
+    "situation": "A person repeatedly sends threatening messages online.",
+    "isViolation": true,
+    "explanation": "This constitutes cyberstalking."
+  },
+
+  "stepByStepAction": [
+    "Preserve messages",
+    "Block offender",
+    "Report to cyber cell"
+  ],
+
+  "severity": "CRITICAL"
+}

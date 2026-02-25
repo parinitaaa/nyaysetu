@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "project": "NyaySetu",
+    "module": "Know Your Rights",
+    "jurisdiction": "India",
+    "version": "1.0.0",
+    "lastUpdated": "2026-02-26",
+    "language": "en",
+    "maintainedBy": "NyaySetu Legal Team",
+    "description": "Authoritative, citizen-friendly legal rights knowledge base for India."
+  },
+
+  "categories": [
+    {
+      "categoryId": "POLICE_RIGHTS",
+      "title": "Rights During Police Interaction",
+      "slug": "police",
+      "description": "Legal protections and obligations when interacting with police authorities.",
+      "priority": "HIGH",
+      "icon": "shield",
+      "audience": ["Citizens", "Accused", "Victims", "Witnesses"],
+      "rightsCount": 3,
+      "files": [
+        "police/fir.json",
+        "police/arrest.json",
+        "police/detention.json"
+      ]
+    },
+
+    {
+      "categoryId": "WOMEN_RIGHTS",
+      "title": "Women’s Rights",
+      "slug": "women",
+      "description": "Legal rights and protections available to women under Indian law.",
+      "priority": "HIGH",
+      "icon": "female",
+      "audience": ["Women", "Girls"],
+      "rightsCount": 3,
+      "files": [
+        "women/domestic_violence.json",
+        "women/workplace_harassment.json",
+        "women/sexual_assault.json"
+      ]
+    },
+
+    {
+      "categoryId": "STUDENT_RIGHTS",
+      "title": "Student & Youth Rights",
+      "slug": "student",
+      "description": "Rights related to education, examinations, campus safety, and youth protection.",
+      "priority": "MEDIUM",
+      "icon": "graduation-cap",
+      "audience": ["Students", "Youth"],
+      "rightsCount": 3,
+      "files": [
+        "student/anti_ragging.json",
+        "student/exam_rights.json",
+        "student/harassment.json"
+      ]
+    },
+
+    {
+      "categoryId": "CONSUMER_RIGHTS",
+      "title": "Consumer Rights",
+      "slug": "consumer",
+      "description": "Rights related to goods, services, refunds, and unfair trade practices.",
+      "priority": "MEDIUM",
+      "icon": "shopping-cart",
+      "audience": ["Consumers"],
+      "rightsCount": 3,
+      "files": [
+        "consumer/refund.json",
+        "consumer/defective_products.json",
+        "consumer/online_fraud.json"
+      ]
+    },
+
+    {
+      "categoryId": "CYBER_RIGHTS",
+      "title": "Cyber & Digital Rights",
+      "slug": "cyber",
+      "description": "Rights and remedies related to online activity, privacy, and cybercrime.",
+      "priority": "HIGH",
+      "icon": "lock",
+      "audience": ["Internet Users", "Social Media Users"],
+      "rightsCount": 3,
+      "files": [
+        "cyber/data_privacy.json",
+        "cyber/cyberstalking.json",
+        "cyber/online_scam.json"
+      ]
+    },
+
+    {
+      "categoryId": "EMPLOYMENT_RIGHTS",
+      "title": "Employment & Workplace Rights",
+      "slug": "employment",
+      "description": "Rights of employees, workers, interns, and contract staff.",
+      "priority": "MEDIUM",
+      "icon": "briefcase",
+      "audience": ["Employees", "Workers", "Interns"],
+      "rightsCount": 3,
+      "files": [
+        "employment/minimum_wage.json",
+        "employment/termination.json",
+        "employment/workplace_safety.json"
+      ]
+    }
+  ]
+}

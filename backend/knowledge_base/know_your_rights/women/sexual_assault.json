@@ -1,0 +1,51 @@
+{
+  "rightId": "WOMEN_SA_003",
+  "title": "Right to Protection Against Sexual Assault",
+  "category": "WOMEN_RIGHTS",
+  "slug": "sexual-assault",
+
+  "summary": "Sexual assault is a serious criminal offence and survivors have strong legal protections.",
+
+  "plainExplanation": {
+    "whatItMeans": "Any sexual act without consent is a crime.",
+    "whyItMatters": "Law prioritizes survivor dignity, privacy, and safety."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Indian Penal Code",
+        "section": "Sections 354, 376"
+      }
+    ]
+  },
+
+  "rightsOfSurvivor": [
+    "Right to free medical treatment",
+    "Right to privacy",
+    "Right to record statement before woman officer"
+  ],
+
+  "whatPoliceMustDo": [
+    "Register FIR immediately",
+    "Ensure medical examination",
+    "Provide protection and support"
+  ],
+
+  "exampleScenario": {
+    "situation": "Police delay FIR after assault complaint.",
+    "isViolation": true,
+    "explanation": "Delay in FIR registration is illegal."
+  },
+
+  "stepByStepAction": [
+    "Call emergency services",
+    "Seek medical help",
+    "File FIR",
+    "Approach legal aid"
+  ],
+
+  "emergencyContact": "112",
+
+  "severity": "CRITICAL"
+}

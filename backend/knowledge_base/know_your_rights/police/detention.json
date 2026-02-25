@@ -1,0 +1,67 @@
+{
+  "rightId": "POLICE_DETENTION_003",
+  "title": "Rights During Detention",
+  "category": "POLICE_RIGHTS",
+  "slug": "detention",
+
+  "summary": "Detention by police is strictly regulated and time-bound under law.",
+
+  "plainExplanation": {
+    "whatItMeans": "Police cannot keep you in custody indefinitely without court permission.",
+    "whyItMatters": "Unlawful detention violates the right to personal liberty."
+  },
+
+  "legalBasis": {
+    "constitutionArticles": ["Article 21", "Article 22"],
+    "acts": [
+      {
+        "name": "Code of Criminal Procedure",
+        "section": "Sections 57, 167"
+      }
+    ]
+  },
+
+  "whoCanUseThisRight": [
+    "Detained persons",
+    "Accused persons"
+  ],
+
+  "timeLimits": {
+    "withoutMagistrate": "Maximum 24 hours",
+    "withMagistrate": "As ordered by court"
+  },
+
+  "whatPoliceMustDo": [
+    "Produce detainee before magistrate within 24 hours",
+    "Allow access to lawyer",
+    "Ensure medical safety"
+  ],
+
+  "whatPoliceCannotDo": [
+    "Detain beyond legal limits",
+    "Use torture or coercion",
+    "Deny legal representation"
+  ],
+
+  "commonViolations": [
+    "Illegal prolonged detention",
+    "Physical or mental harassment",
+    "Denial of lawyer access"
+  ],
+
+  "exampleScenario": {
+    "situation": "A person is kept in police station for 3 days without court order.",
+    "isViolation": true,
+    "explanation": "Detention beyond 24 hours without magistrate approval is illegal."
+  },
+
+  "whatToDoIfViolated": [
+    "Contact a lawyer immediately",
+    "Inform family members",
+    "Approach magistrate or human rights commission"
+  ],
+
+  "emergencyContact": "112",
+
+  "severity": "CRITICAL"
+}

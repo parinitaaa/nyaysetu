@@ -1,0 +1,42 @@
+{
+  "rightId": "CONSUMER_DEFECT_002",
+  "title": "Right Against Defective Products",
+  "category": "CONSUMER_RIGHTS",
+  "slug": "defective-products",
+
+  "summary": "Manufacturers and sellers are liable for defects in goods sold to consumers.",
+
+  "plainExplanation": {
+    "whatItMeans": "You should not suffer loss due to faulty products.",
+    "whyItMatters": "Ensures product safety and accountability."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Consumer Protection Act",
+        "section": "Product Liability Provisions"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Manufacturing defect",
+    "Design defect",
+    "Inadequate instructions or warnings"
+  ],
+
+  "exampleScenario": {
+    "situation": "An electric appliance causes injury due to faulty wiring.",
+    "isViolation": true,
+    "explanation": "Manufacturer is liable for harm."
+  },
+
+  "stepByStepAction": [
+    "Preserve product and bill",
+    "Seek replacement or compensation",
+    "File consumer complaint if needed"
+  ],
+
+  "severity": "HIGH"
+}
