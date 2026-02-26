@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const CategoryCard = ({ category }) => (
-  <Link to={`/category/${category.slug}`}>
-    <div className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition cursor-pointer">
+const CategoryCard = ({ title, description, slug, icon }) => (
+  <Link to={`/category/${slug}`}>
+    <div className="category-card">
       <div className="flex items-center space-x-4">
-        <div className="text-3xl">{category.icon}</div>
+        <div className="text-3xl">{icon}</div>
         <div>
-          <h2 className="text-xl font-semibold">{category.title}</h2>
-          <p className="text-gray-500">{category.description}</p>
+          <h2 className="category-card h2">{title}</h2>
+          <p className="category-card p">{description}</p>
         </div>
       </div>
     </div>
