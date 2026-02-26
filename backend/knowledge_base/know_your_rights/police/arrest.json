@@ -1,0 +1,80 @@
+{
+  "rightId": "POLICE_ARREST_002",
+  "title": "Rights During Arrest",
+  "category": "POLICE_RIGHTS",
+  "slug": "arrest",
+
+  "summary": "A person cannot be arrested arbitrarily. The police must follow strict legal procedures during arrest.",
+
+  "plainExplanation": {
+    "whatItMeans": "Police must have valid legal reasons to arrest you and must inform you of those reasons.",
+    "whyItMatters": "Illegal arrests violate personal liberty and constitutional rights."
+  },
+
+  "legalBasis": {
+    "constitutionArticles": ["Article 22"],
+    "acts": [
+      {
+        "name": "Code of Criminal Procedure",
+        "section": "Sections 41, 41A, 50"
+      }
+    ]
+  },
+
+  "whoCanUseThisRight": [
+    "Any arrested person"
+  ],
+
+  "whenItApplies": [
+    "You are being arrested or detained",
+    "Police restrict your freedom of movement"
+  ],
+
+  "whatPoliceMustDo": [
+    "Inform grounds of arrest",
+    "Show arrest memo",
+    "Allow you to inform a friend or family member",
+    "Produce you before a magistrate within 24 hours"
+  ],
+
+  "whatPoliceCannotDo": [
+    "Arrest without legal grounds",
+    "Use unnecessary force",
+    "Detain beyond 24 hours without court approval"
+  ],
+
+  "rightsOfArrestedPerson": [
+    "Right to remain silent",
+    "Right to legal counsel",
+    "Right to medical examination",
+    "Right to bail (where applicable)"
+  ],
+
+  "exampleScenario": {
+    "situation": "Police arrest someone for questioning without explaining the reason.",
+    "isViolation": true,
+    "explanation": "Police must inform grounds of arrest immediately."
+  },
+
+  "stepByStepAction": [
+    "Ask reason for arrest",
+    "Ask for arrest memo",
+    "Inform a trusted person",
+    "Request a lawyer"
+  ],
+
+  "specialProtections": {
+    "women": [
+      "Cannot be arrested at night except in exceptional circumstances",
+      "Must be arrested by female officer"
+    ],
+    "children": [
+      "Cannot be detained in police lockup",
+      "Must be produced before Juvenile Justice Board"
+    ]
+  },
+
+  "emergencyContact": "112",
+
+  "severity": "CRITICAL"
+}

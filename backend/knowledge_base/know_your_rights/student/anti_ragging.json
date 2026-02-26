@@ -1,0 +1,51 @@
+{
+  "rightId": "STUDENT_AR_001",
+  "title": "Right Against Ragging",
+  "category": "STUDENT_RIGHTS",
+  "slug": "anti-ragging",
+
+  "summary": "Ragging in any form is strictly prohibited in educational institutions.",
+
+  "plainExplanation": {
+    "whatItMeans": "Any act that humiliates, harasses, or harms a student is illegal.",
+    "whyItMatters": "Institutions are legally responsible for prevention."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "UGC Regulations on Curbing Ragging",
+        "section": "2009"
+      }
+    ]
+  },
+
+  "whatCountsAsRagging": [
+    "Physical abuse",
+    "Verbal harassment",
+    "Forced activities",
+    "Psychological humiliation"
+  ],
+
+  "institutionDuties": [
+    "Anti-ragging committee",
+    "Anonymous complaint system",
+    "Strict disciplinary action"
+  ],
+
+  "exampleScenario": {
+    "situation": "Seniors force juniors to perform humiliating tasks.",
+    "isViolation": true,
+    "explanation": "Forced humiliation is ragging."
+  },
+
+  "stepByStepAction": [
+    "Report to anti-ragging committee",
+    "Use national anti-ragging helpline",
+    "Inform parents or guardians"
+  ],
+
+  "emergencyContact": "1800-180-5522",
+
+  "severity": "CRITICAL"
+}

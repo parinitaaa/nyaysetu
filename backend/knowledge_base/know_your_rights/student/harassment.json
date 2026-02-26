@@ -1,0 +1,40 @@
+{
+  "rightId": "STUDENT_HARASS_003",
+  "title": "Right Against Harassment in Educational Institutions",
+  "category": "STUDENT_RIGHTS",
+  "slug": "student-harassment",
+
+  "summary": "Students are entitled to a safe and non-discriminatory educational environment.",
+
+  "plainExplanation": {
+    "whatItMeans": "Harassment by peers, staff, or authorities is prohibited.",
+    "whyItMatters": "A safe environment is essential for learning."
+  },
+
+  "whatCountsAsHarassment": [
+    "Verbal abuse",
+    "Discrimination",
+    "Threats or intimidation",
+    "Sexual harassment"
+  ],
+
+  "complaintAuthorities": [
+    "Internal grievance cell",
+    "University administration",
+    "Regulatory authority"
+  ],
+
+  "exampleScenario": {
+    "situation": "A student is threatened by faculty for raising complaints.",
+    "isViolation": true,
+    "explanation": "Retaliation is prohibited."
+  },
+
+  "stepByStepAction": [
+    "Document incidents",
+    "File complaint with grievance cell",
+    "Escalate if unresolved"
+  ],
+
+  "severity": "HIGH"
+}
