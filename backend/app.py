@@ -6,6 +6,7 @@ import numpy as np
 import joblib
 import re
 
+<<<<<<< HEAD
 # =========================
 # 1️⃣ Initialize FastAPI
 # =========================
@@ -14,6 +15,11 @@ app = FastAPI(
     description="Predicts case outcomes based on user-selected options",
     version="1.0"
 )
+=======
+from routes import rights
+from routes import chatbot
+from config.settings import APP_NAME, API_VERSION, DEBUG
+>>>>>>> 30b94b5 (sorting out pull error)
 
 app.add_middleware(
     CORSMiddleware,
@@ -103,9 +109,16 @@ def predict_case(
         }
     }
 
+<<<<<<< HEAD
 # =========================
 # 7️⃣ Root
 # =========================
 @app.get("/")
 def root():
     return {"message": "Case Prediction API is running", "version": "1.0"}
+=======
+    return app
+
+    
+app = create_app()
+>>>>>>> 30b94b5 (sorting out pull error)
