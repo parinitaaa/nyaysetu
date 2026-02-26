@@ -1,0 +1,162 @@
+/* src/index.css */
+
+/* General reset & body */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #111827;
+  font-weight: 600;
+  margin-right: 1.5rem;
+}
+
+.navbar a:hover {
+  color: #2563eb;
+}
+
+/* Home page / Categories grid */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+  margin-top: 2.5rem;
+}
+
+/* Category card */
+.category-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.category-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.category-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #4b5563;
+}
+
+/* Rights List Page */
+.rights-page {
+  padding: 3rem 4rem;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.rights-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.rights-header p {
+  font-size: 1rem;
+  color: #4b5563;
+  max-width: 640px;
+}
+
+.rights-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+}
+
+/* Rights card */
+.rights-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.rights-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.rights-card h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.rights-card-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.rights-card-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* Status & error messages */
+.status-text {
+  margin-top: 2rem;
+  color: #374151;
+}
+
+.error-text {
+  margin-top: 2rem;
+  color: #dc2626;
+  font-weight: 500;
+}
+
+/* RightDetail Page */
+.right-detail h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.right-detail p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.right-detail h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.right-detail p {
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.5;
+}

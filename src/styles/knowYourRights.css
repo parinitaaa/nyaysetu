@@ -1,0 +1,78 @@
+/* Page container */
+.rights-page {
+  padding: 3rem 4rem;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+/* Header */
+.rights-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827; /* visible heading */
+  margin-bottom: 0.5rem;
+}
+
+.rights-header p {
+  font-size: 1rem;
+  color: #4b5563; /* subtle gray */
+  max-width: 640px;
+}
+
+/* Grid */
+.rights-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+}
+
+/* Card */
+.rights-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.rights-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Card title */
+.rights-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+/* Card description */
+.rights-card-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+/* Link */
+.rights-card-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* States */
+.status-text {
+  margin-top: 2rem;
+  color: #374151;
+}
+
+.error-text {
+  margin-top: 2rem;
+  color: #dc2626;
+  font-weight: 500;
+}
