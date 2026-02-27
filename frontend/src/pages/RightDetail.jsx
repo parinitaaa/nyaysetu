@@ -1,79 +1,140 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
+import { getSingleRight } from "../api/rightsApi";
 
-const RightDetail = () => {
-  const { slug, rightFile } = useParams();
-  const [rightData, setRightData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    fetch(`http://localhost:5004/rights/${slug}/${rightFile}`)
-      .then((res) => {
-        if (!res.ok) throw new Error("Failed to fetch right details");
-        return res.json();
-      })
-      .then((data) => {
-        setRightData(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error(err);
-        setError(err.message);
-        setLoading(false);
-      });
-  }, [slug, rightFile]);
-
-  if (loading) return <p>Loading right details...</p>;
-  if (error) return <p className="text-red-500">Error: {error}</p>;
-  if (!rightData) return <p>No details found.</p>;
+function SectionList({ title, items }) {
+  if (!items || items.length === 0) return null;
 
   return (
-    <div className="right-detail">
-      <h1 className="right-detail h1">{rightData.title}</h1>
-      <p className="right-detail p">{rightData.summary}</p>
+    <div className="bg-slate-800 p-4 rounded-xl">
+      <h2 className="text-xl font-semibold mb-3 text-emerald-400">
+        {title}
+      </h2>
+      <ul className="list-disc ml-6 space-y-1 text-slate-300">
+        {items.map((item, index) => (
+          <li key={index}>
+            {typeof item === "string"
+              ? item
+              : item.name
+              ? `${item.name} (${item.section})`
+              : JSON.stringify(item)}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
-      {rightData.plainExplanation && (
-        <div className="mb-4">
-          <h2 className="right-detail h2">What it means</h2>
-          <p>{rightData.plainExplanation.whatItMeans}</p>
-          <p className="right-detail p">{rightData.plainExplanation.whyItMatters}</p>
+function RightDetail() {
+  const { category_slug, right_slug } = useParams();
+  const [right, setRight] = useState(null);
+
+  useEffect(() => {
+    const fetchRight = async () => {
+      try {
+        const data = await getSingleRight(category_slug, right_slug);
+        setRight(data);
+      } catch (error) {
+        console.error("Failed to load right:", error);
+      }
+    };
+
+    fetchRight();
+  }, [category_slug, right_slug]);
+
+  if (!right) {
+    return <div className="p-8">Loading...</div>;
+  }
+
+  return (
+    <div className="p-8 space-y-6">
+
+      {/* Back */}
+      <Link
+        to={`/rights/${category_slug}`}
+        className="text-emerald-400 hover:underline inline-block"
+      >
+        ← Back to Category
+      </Link>
+
+    <div className="flex items-center justify-between">
+  <h1 className="text-3xl font-bold text-emerald-400">
+    {right.title}
+  </h1>
+
+  {right.severity && (
+    <span
+      className={`px-3 py-1 rounded-full text-sm font-semibold ${
+        right.severity === "CRITICAL"
+          ? "bg-red-600 text-white"
+          : right.severity === "HIGH"
+          ? "bg-orange-500 text-white"
+          : "bg-yellow-500 text-black"
+      }`}
+    >
+      {right.severity}
+    </span>
+  )}
+</div>
+
+      <p className="text-slate-300">{right.summary}</p>
+
+      {/* Plain Explanation */}
+      {right.plainExplanation && (
+        <div className="bg-slate-800 p-4 rounded-xl">
+          <h2 className="text-xl font-semibold mb-2 text-emerald-400">
+            Explanation
+          </h2>
+          <p className="text-slate-300 mb-2">
+            {right.plainExplanation.whatItMeans}
+          </p>
+          <p className="text-slate-400">
+            {right.plainExplanation.whyItMatters}
+          </p>
         </div>
       )}
 
-      {rightData.legalBasis?.acts && (
-        <div className="mb-4">
-          <h2 className="right-detail h2">Legal Basis</h2>
-          <ul className="list-disc ml-5">
-            {rightData.legalBasis.acts.map((act, idx) => (
-              <li key={idx}>{act.name} - {act.section}</li>
+      <SectionList
+        title="Who Can Use This Right"
+        items={right.whoCanUseThisRight}
+      />
+
+      <SectionList
+        title="Types of Abuse Covered"
+        items={right.typesOfAbuseCovered}
+      />
+
+      <SectionList
+        title="What Constitutes Violation"
+        items={right.whatConstitutesViolation}
+      />
+
+      <SectionList
+        title="Reliefs Available"
+        items={right.reliefsAvailable}
+      />
+
+      <SectionList
+        title="Step By Step Action"
+        items={right.stepByStepAction}
+      />
+
+      {right.emergencyContacts && (
+        <div className="bg-red-900/30 border border-red-500 p-4 rounded-xl">
+          <h2 className="text-xl font-semibold text-red-400 mb-3">
+            Emergency Contacts
+          </h2>
+          <ul className="space-y-1 text-red-300">
+            {right.emergencyContacts.map((contact, index) => (
+              <li key={index}>
+                {contact.service}: {contact.number}
+              </li>
             ))}
           </ul>
         </div>
       )}
-
-      {rightData.stepByStepAction && (
-        <div className="mb-4">
-          <h2 className="right-detail h2">Steps to Take</h2>
-          <ol className="list-decimal ml-5">
-            {rightData.stepByStepAction.map((step, idx) => (
-              <li key={idx}>{step}</li>
-            ))}
-          </ol>
-        </div>
-      )}
-
-      {rightData.exampleScenario && (
-        <div className="mb-4">
-          <h2 className="right-detail h2">Example</h2>
-          <p>{rightData.exampleScenario.situation}</p>
-          {rightData.exampleScenario.isViolation && (
-            <p className="right-detail p">{rightData.exampleScenario.explanation}</p>
-          )}
-        </div>
-      )}
     </div>
   );
-};
+}
 
 export default RightDetail;
