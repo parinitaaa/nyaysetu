@@ -46,3 +46,11 @@ config/local_settings.py
 # =========================
 .cache/
 pytest_cache/
+venv/
+__pycache__/
+*.pkl   
+*.joblib
+*.csv
+# Ignore npm lock file (using Yarn or no lock strategy)
+package-lock.json
+package.json
