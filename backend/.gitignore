@@ -13,6 +13,10 @@ __pycache__/
 *.pyd
 *.pyc
 
+
+# Chroma vector database
+chatbot/chroma_db/
+
 # =========================
 # Virtual Environment
 # =========================
@@ -46,3 +50,5 @@ config/local_settings.py
 # =========================
 .cache/
 pytest_cache/
+
+001chatbot/ 

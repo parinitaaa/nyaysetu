@@ -10,7 +10,8 @@ import re
 
 from routes import rights
 from routes import chatbot  # if you already have other chatbot routes
-from chatbot.rag_chain import get_rag_chain
+from routes.chatbot import router as chatbot_router
+from chatbot.rag_pipeline import ask_question
 from config.settings import APP_NAME, API_VERSION, DEBUG
 
 # =========================
@@ -121,21 +122,19 @@ def create_app() -> FastAPI:
             }
         }
 
-    # =========================
-    # 9️⃣ RAG CHATBOT (NEW)
-    # =========================
-    qa_chain = get_rag_chain()
-
+     # =========================
+     # 9️⃣ RAG CHATBOT (FAISS + LLAMA)
+     # =========================
     class ChatRequest(BaseModel):
-        question: str
+     question: str
 
     @app.post("/chat")
     def chat(request: ChatRequest):
-        result = qa_chain.invoke(request.question)
+       answer = ask_question(request.question)
 
-        return {
-            "question": request.question,
-            "answer": result
+       return {
+         "question": request.question,
+         "answer": answer
         }
 
     # =========================
@@ -143,11 +142,7 @@ def create_app() -> FastAPI:
     # =========================
     @app.get("/")
     def root():
-        return {
-            "app": APP_NAME,
-            "version": API_VERSION,
-            "status": "running"
-        }
+        return {"status": "running"}
 
     return app
 
