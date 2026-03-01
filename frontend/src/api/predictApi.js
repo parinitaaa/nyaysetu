@@ -1,9 +1,6 @@
-import API from "./axios";
+import axios from "./axios";
 
-export const predictCase = async (params) => {
-  const response = await API.post("/predict", null, {
-    params: params,
-  });
-
+export const predictCase = async (formData) => {
+  const response = await axios.post("/predict", formData);
   return response.data;
 };
