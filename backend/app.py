@@ -1,22 +1,25 @@
-# backend/main.py
+# backend/app.py
 
-from fastapi import FastAPI
+from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
+import os
+import re
+import shutil
 import pandas as pd
 import joblib
-import re
 
-from routes import rights
-from routes import chatbot  # if you already have other chatbot routes
-from routes.chatbot import router as chatbot_router
+from routes import rights, chatbot
 from chatbot.rag_pipeline import ask_question
 from config.settings import APP_NAME, API_VERSION, DEBUG
+from pdfanalyzer.pdf_summarizer import summarize_pdf
+
 
 # =========================
-# 1️⃣ Create FastAPI app
+# App Factory
 # =========================
+
 def create_app() -> FastAPI:
     app = FastAPI(
         title=APP_NAME,
@@ -26,55 +29,51 @@ def create_app() -> FastAPI:
     )
 
     # =========================
-    # 2️⃣ CORS
+    # CORS
     # =========================
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["*"],  # restrict in prod
+        allow_origins=["*"],  # restrict in production
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
     )
 
     # =========================
-    # 3️⃣ Register existing routes
+    # Routers
     # =========================
     app.include_router(rights.router)
     app.include_router(chatbot.router)
 
     # =========================
-    # 4️⃣ Load ML model + vectorizer
+    # Load ML assets
     # =========================
     model = joblib.load("models/case_outcome_model.pkl")
     vectorizer = joblib.load("models/tfidf_vectorizer.pkl")
-
-    # =========================
-    # 5️⃣ Load dataset
-    # =========================
     df_cases = pd.read_csv("models/cases_data.csv")
 
     # =========================
-    # 6️⃣ Helper: clean text
+    # Utilities
     # =========================
-    def clean_text(text: str):
+    def clean_text(text: str) -> str:
         text = str(text).lower()
         text = re.sub(r"[^a-z ]", " ", text)
         return re.sub(r"\s+", " ", text).strip()
 
     # =========================
-    # 7️⃣ Dropdown options
+    # Dropdown options
     # =========================
     @app.get("/options")
     def get_options():
         return {
-            "states": sorted(df_cases["state"].unique().tolist()),
-            "court_types": sorted(df_cases["court_type"].unique().tolist()),
-            "case_types": sorted(df_cases["case_type"].unique().tolist()),
-            "public_interest": ["Yes", "No"]
+            "states": sorted(df_cases["state"].unique()),
+            "court_types": sorted(df_cases["court_type"].unique()),
+            "case_types": sorted(df_cases["case_type"].unique()),
+            "public_interest": ["Yes", "No"],
         }
 
     # =========================
-    # 8️⃣ Case outcome prediction
+    # Case Outcome Prediction
     # =========================
     class PredictRequest(BaseModel):
         state: str
@@ -85,9 +84,9 @@ def create_app() -> FastAPI:
     @app.post("/predict")
     def predict_case(request: PredictRequest):
         subset = df_cases[
-            (df_cases["state"] == request.state) &
-            (df_cases["court_type"] == request.court_type) &
-            (df_cases["case_type"] == request.case_type)
+            (df_cases["state"] == request.state)
+            & (df_cases["court_type"] == request.court_type)
+            & (df_cases["case_type"] == request.case_type)
         ]
 
         if subset.empty:
@@ -101,44 +100,62 @@ def create_app() -> FastAPI:
             f"{avg_complexity:.1f} and {avg_hearings:.0f} hearings"
         )
 
-        input_vec = vectorizer.transform([clean_text(input_text)])
-
-        prediction = model.predict(input_vec)[0]
-        prob = model.predict_proba(input_vec)[0]
+        vec = vectorizer.transform([clean_text(input_text)])
+        prediction = model.predict(vec)[0]
+        probabilities = model.predict_proba(vec)[0]
 
         return {
             "prediction": {
                 "outcome": "Favorable (Decided)" if prediction == 1 else "Unfavorable (Pending)",
-                "confidence": round(float(max(prob)) * 100, 2),
-                "favorable_probability": round(float(prob[1]) * 100, 2)
-            },
-            "inputs": {
-                "state": request.state,
-                "court_type": request.court_type,
-                "case_type": request.case_type,
-                "public_interest": request.public_interest,
-                "avg_complexity": round(avg_complexity, 1),
-                "avg_hearings": int(avg_hearings)
+                "confidence": round(float(max(probabilities)) * 100, 2),
+                "favorable_probability": round(float(probabilities[1]) * 100, 2),
             }
         }
 
-     # =========================
-     # 9️⃣ RAG CHATBOT (FAISS + LLAMA)
-     # =========================
+    # =========================
+    # RAG Chatbot
+    # =========================
     class ChatRequest(BaseModel):
-     question: str
+        question: str
 
     @app.post("/chat")
     def chat(request: ChatRequest):
-       answer = ask_question(request.question)
-
-       return {
-         "question": request.question,
-         "answer": answer
+        return {
+            "question": request.question,
+            "answer": ask_question(request.question),
         }
 
     # =========================
-    # 🔟 Root
+    # PDF Summarizer
+    # =========================
+    UPLOAD_DIR = "temp"
+    os.makedirs(UPLOAD_DIR, exist_ok=True)
+
+    @app.post("/summarize-pdf")
+    async def summarize_pdf_endpoint(file: UploadFile = File(...)):
+        if not file.filename.lower().endswith(".pdf"):
+            raise HTTPException(status_code=400, detail="Only PDF files are allowed")
+
+        file_path = os.path.join(UPLOAD_DIR, file.filename)
+
+        try:
+            with open(file_path, "wb") as buffer:
+                shutil.copyfileobj(file.file, buffer)
+
+            summary = summarize_pdf(file_path)
+
+            return {
+                "filename": file.filename,
+                "summary": summary,
+            }
+
+        finally:
+            # Always clean up temp file
+            if os.path.exists(file_path):
+                os.remove(file_path)
+
+    # =========================
+    # Health Check
     # =========================
     @app.get("/")
     def root():
@@ -148,6 +165,6 @@ def create_app() -> FastAPI:
 
 
 # =========================
-# 1️⃣1️⃣ App instance
+# App instance
 # =========================
 app = create_app()
