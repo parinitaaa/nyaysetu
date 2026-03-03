@@ -3,7 +3,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-
+from database import init_db
 import pandas as pd
 import joblib
 import re
@@ -14,6 +14,7 @@ from routes.chatbot import router as chatbot_router
 from chatbot.rag_pipeline import ask_question
 from config.settings import APP_NAME, API_VERSION, DEBUG
 
+
 # =========================
 # 1️⃣ Create FastAPI app
 # =========================
@@ -22,8 +23,14 @@ def create_app() -> FastAPI:
         title=APP_NAME,
         version=API_VERSION,
         debug=DEBUG,
-        description="NyaySetu Backend API"
+        description="NyaySetu Backend API",
     )
+
+    @app.on_event("startup")
+    async def startup():
+        await init_db()
+
+        print("✅ Legal Analyzer DB ready")
 
     # =========================
     # 2️⃣ CORS
@@ -41,7 +48,9 @@ def create_app() -> FastAPI:
     # =========================
     app.include_router(rights.router)
     app.include_router(chatbot.router)
+    from routes.legal_analyzer import router as legal_router
 
+    app.include_router(legal_router)
     # =========================
     # 4️⃣ Load ML model + vectorizer
     # =========================
@@ -70,7 +79,7 @@ def create_app() -> FastAPI:
             "states": sorted(df_cases["state"].unique().tolist()),
             "court_types": sorted(df_cases["court_type"].unique().tolist()),
             "case_types": sorted(df_cases["case_type"].unique().tolist()),
-            "public_interest": ["Yes", "No"]
+            "public_interest": ["Yes", "No"],
         }
 
     # =========================
@@ -85,9 +94,9 @@ def create_app() -> FastAPI:
     @app.post("/predict")
     def predict_case(request: PredictRequest):
         subset = df_cases[
-            (df_cases["state"] == request.state) &
-            (df_cases["court_type"] == request.court_type) &
-            (df_cases["case_type"] == request.case_type)
+            (df_cases["state"] == request.state)
+            & (df_cases["court_type"] == request.court_type)
+            & (df_cases["case_type"] == request.case_type)
         ]
 
         if subset.empty:
@@ -108,9 +117,11 @@ def create_app() -> FastAPI:
 
         return {
             "prediction": {
-                "outcome": "Favorable (Decided)" if prediction == 1 else "Unfavorable (Pending)",
+                "outcome": "Favorable (Decided)"
+                if prediction == 1
+                else "Unfavorable (Pending)",
                 "confidence": round(float(max(prob)) * 100, 2),
-                "favorable_probability": round(float(prob[1]) * 100, 2)
+                "favorable_probability": round(float(prob[1]) * 100, 2),
             },
             "inputs": {
                 "state": request.state,
@@ -118,24 +129,21 @@ def create_app() -> FastAPI:
                 "case_type": request.case_type,
                 "public_interest": request.public_interest,
                 "avg_complexity": round(avg_complexity, 1),
-                "avg_hearings": int(avg_hearings)
-            }
+                "avg_hearings": int(avg_hearings),
+            },
         }
 
-     # =========================
-     # 9️⃣ RAG CHATBOT (FAISS + LLAMA)
-     # =========================
+    # =========================
+    # 9️⃣ RAG CHATBOT (FAISS + LLAMA)
+    # =========================
     class ChatRequest(BaseModel):
-     question: str
+        question: str
 
     @app.post("/chat")
     def chat(request: ChatRequest):
-       answer = ask_question(request.question)
+        answer = ask_question(request.question)
 
-       return {
-         "question": request.question,
-         "answer": answer
-        }
+        return {"question": request.question, "answer": answer}
 
     # =========================
     # 🔟 Root

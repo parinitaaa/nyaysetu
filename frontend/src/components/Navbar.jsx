@@ -30,10 +30,12 @@ function Navbar() {
   }, [isMobileMenuOpen]);
 
   const navLinks = [
-    { to: "/predict", label: "Predict Case Outcome" },
-    { to: "/rights", label: "Explore Your Legal Rights" },
-    { to: "/chatbot", label: "AI Legal Assistant" },
-  ];
+  { to: "/predict", label: "Predict Case Outcome" },
+  { to: "/rights", label: "Explore Your Legal Rights" },
+  { to: "/chatbot", label: "AI Legal Assistant" },
+  { to: "/legal-analyzer", label: "Legal Analyzer" },
+  { to: "/legal-history", label: "History" },
+];
 
   return (
     <motion.nav

@@ -6,6 +6,8 @@ import Chatbot from "./pages/Chatbot";
 import RightsCategories from "./pages/RightsCategories";
 import RightsByCategory from "./pages/RightsByCategory";
 import RightDetail from "./pages/RightDetail";
+import LegalAnalyzer from "./pages/LegalAnalyzer";
+import LegalHistory from "./pages/LegalHistory";
 import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
 
@@ -24,6 +26,8 @@ function AnimatedRoutes() {
           path="/rights/:category_slug/:right_slug"
           element={<RightDetail />}
         />
+        <Route path="/legal-analyzer" element={<LegalAnalyzer />} />
+        <Route path="/legal-history" element={<LegalHistory />} />
       </Routes>
     </AnimatePresence>
   );
