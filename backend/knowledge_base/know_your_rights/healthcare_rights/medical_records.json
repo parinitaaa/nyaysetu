@@ -1,0 +1,42 @@
+{
+  "rightId": "HEALTHCARE_RECORDS_002",
+  "title": "Right to Access Medical Records",
+  "category": "HEALTHCARE_RIGHTS",
+  "slug": "medical-records-access",
+
+  "summary": "Patients have the right to obtain copies of their medical records.",
+
+  "plainExplanation": {
+    "whatItMeans": "Hospitals must provide medical reports when requested.",
+    "whyItMatters": "Ensures transparency and continuity of care."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Clinical Establishments Act",
+        "section": "Patient Records Access"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Hospital refuses to share records",
+    "Unnecessary delay",
+    "Charging unreasonable fees"
+  ],
+
+  "exampleScenario": {
+    "situation": "Patient asks for test reports but hospital refuses.",
+    "isViolation": true,
+    "explanation": "Patient has legal right to records."
+  },
+
+  "stepByStepAction": [
+    "Submit written request",
+    "Keep identity proof",
+    "Report to health authority if denied"
+  ],
+
+  "severity": "MEDIUM"
+}

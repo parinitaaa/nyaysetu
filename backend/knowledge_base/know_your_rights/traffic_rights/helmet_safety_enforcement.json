@@ -1,0 +1,42 @@
+{
+  "rightId": "TRAFFIC_HELMET_002",
+  "title": "Helmet Safety Requirement",
+  "category": "TRAFFIC_RIGHTS",
+  "slug": "helmet-safety",
+
+  "summary": "Two wheeler riders must wear helmets for safety and legal compliance.",
+
+  "plainExplanation": {
+    "whatItMeans": "Both rider and pillion passenger must wear helmets.",
+    "whyItMatters": "Reduces fatal head injuries."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Motor Vehicles Act",
+        "section": "Section 129"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Riding without helmet",
+    "Using non-standard helmet",
+    "Ignoring safety rules"
+  ],
+
+  "exampleScenario": {
+    "situation": "Motorcyclist rides without helmet.",
+    "isViolation": true,
+    "explanation": "Traffic fine may be imposed."
+  },
+
+  "stepByStepAction": [
+    "Wear certified helmet",
+    "Follow road safety rules",
+    "Pay challan if violation occurs"
+  ],
+
+  "severity": "MEDIUM"
+}

@@ -1,0 +1,42 @@
+{
+  "rightId": "BANKING_ACCOUNT_003",
+  "title": "Right to Close Bank Account",
+  "category": "BANKING_RIGHTS",
+  "slug": "close-bank-account",
+
+  "summary": "Customers have the right to close their bank accounts without unreasonable delay.",
+
+  "plainExplanation": {
+    "whatItMeans": "You can close your bank account whenever you want.",
+    "whyItMatters": "Ensures freedom to switch banks."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "RBI Banking Regulations",
+        "section": "Account Closure Rules"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Bank refusing account closure",
+    "Unreasonable delays",
+    "Unnecessary charges"
+  ],
+
+  "exampleScenario": {
+    "situation": "Bank delays closing account despite written request.",
+    "isViolation": true,
+    "explanation": "Customer can escalate complaint."
+  },
+
+  "stepByStepAction": [
+    "Submit account closure request",
+    "Clear outstanding dues",
+    "Escalate complaint to bank ombudsman if needed"
+  ],
+
+  "severity": "LOW"
+}

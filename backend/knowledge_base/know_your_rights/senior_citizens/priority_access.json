@@ -1,0 +1,42 @@
+{
+  "rightId": "SENIOR_PRIORITY_003",
+  "title": "Priority Access for Senior Citizens",
+  "category": "SENIOR_CITIZEN_RIGHTS",
+  "slug": "priority-services",
+
+  "summary": "Senior citizens are entitled to priority access in various public services.",
+
+  "plainExplanation": {
+    "whatItMeans": "Elderly citizens should receive priority in queues and services.",
+    "whyItMatters": "Helps reduce physical strain on seniors."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Senior Citizen Welfare Policies",
+        "section": "Public Service Access"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Denial of priority seating",
+    "Ignoring senior citizen assistance",
+    "Failure to provide reserved facilities"
+  ],
+
+  "exampleScenario": {
+    "situation": "A government office refuses priority service to a senior citizen.",
+    "isViolation": true,
+    "explanation": "Senior citizens are entitled to assistance."
+  },
+
+  "stepByStepAction": [
+    "Request priority service",
+    "Report issue to authority",
+    "Escalate complaint if ignored"
+  ],
+
+  "severity": "LOW"
+}

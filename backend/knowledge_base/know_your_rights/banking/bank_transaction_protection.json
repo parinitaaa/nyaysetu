@@ -1,0 +1,42 @@
+{
+  "rightId": "BANKING_FRAUD_001",
+  "title": "Protection Against Unauthorized Bank Transactions",
+  "category": "BANKING_RIGHTS",
+  "slug": "unauthorized-bank-transactions",
+
+  "summary": "Customers are protected against unauthorized electronic banking transactions if reported promptly.",
+
+  "plainExplanation": {
+    "whatItMeans": "If someone steals money from your bank account digitally, you may not be liable if you report it quickly.",
+    "whyItMatters": "Protects customers from financial loss due to cyber fraud."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "RBI Guidelines on Electronic Banking",
+        "section": "Customer Protection Policy"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Unauthorized debit card transactions",
+    "Fraudulent online banking transfers",
+    "UPI transactions made without consent"
+  ],
+
+  "exampleScenario": {
+    "situation": "Money is withdrawn from a customer's account through online fraud.",
+    "isViolation": true,
+    "explanation": "Customer can report to bank and claim protection."
+  },
+
+  "stepByStepAction": [
+    "Report transaction to bank immediately",
+    "Block debit card or online banking",
+    "File complaint with RBI banking ombudsman if unresolved"
+  ],
+
+  "severity": "HIGH"
+}
