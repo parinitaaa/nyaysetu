@@ -1,0 +1,61 @@
+# =========================
+# =========================
+# Node.js
+# =========================
+node_modules/
+npm-debug.log*
+yarn-error.log*
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# =========================
+# Virtual Environment
+# =========================
+venv/
+.env/
+
+# =========================
+# FastAPI / Uvicorn
+# =========================
+*.log
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Local config overrides
+# =========================
+config/local_settings.py
+
+# =========================
+# Temporary / cache files
+# =========================
+.cache/
+pytest_cache/
+venv/
+__pycache__/
+*.pkl   
+*.joblib
+*.csv
+# Ignore npm lock file (using Yarn or no lock strategy)
+package-lock.json
+package.json
+venv/
+backend/.env
+__pycache__/
+*.pyc
+.env
