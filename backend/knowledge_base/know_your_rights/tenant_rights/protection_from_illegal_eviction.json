@@ -1,0 +1,42 @@
+{
+  "rightId": "TENANT_EVICTION_002",
+  "title": "Protection Against Illegal Eviction",
+  "category": "TENANT_RIGHTS",
+  "slug": "illegal-eviction",
+
+  "summary": "Tenants cannot be forcibly evicted without due legal process.",
+
+  "plainExplanation": {
+    "whatItMeans": "Landlords cannot throw you out without proper notice and legal procedures.",
+    "whyItMatters": "Ensures housing stability and protection."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Model Tenancy Act",
+        "section": "Eviction Procedures"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Locking tenant out of house",
+    "Removing tenant belongings",
+    "Eviction without notice"
+  ],
+
+  "exampleScenario": {
+    "situation": "Landlord changes locks while tenant is away.",
+    "isViolation": true,
+    "explanation": "Illegal eviction without court order."
+  },
+
+  "stepByStepAction": [
+    "Contact local authorities",
+    "Document eviction attempt",
+    "Seek legal remedy through rent court"
+  ],
+
+  "severity": "HIGH"
+}

@@ -1,0 +1,42 @@
+{
+  "rightId": "HEALTHCARE_CONSENT_003",
+  "title": "Right to Informed Consent",
+  "category": "HEALTHCARE_RIGHTS",
+  "slug": "informed-consent",
+
+  "summary": "Patients must be informed about medical procedures before treatment.",
+
+  "plainExplanation": {
+    "whatItMeans": "Doctors must explain risks and benefits before performing procedures.",
+    "whyItMatters": "Ensures patient autonomy and decision making."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Medical Council of India Guidelines",
+        "section": "Patient Consent Rules"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Procedure performed without consent",
+    "Patient not informed of risks",
+    "Misleading medical information"
+  ],
+
+  "exampleScenario": {
+    "situation": "Surgery performed without informing patient of risks.",
+    "isViolation": true,
+    "explanation": "Violation of patient rights."
+  },
+
+  "stepByStepAction": [
+    "Ask for procedure details",
+    "Request written consent form",
+    "File complaint if rights violated"
+  ],
+
+  "severity": "HIGH"
+}

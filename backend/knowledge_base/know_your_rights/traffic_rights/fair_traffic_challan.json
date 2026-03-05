@@ -1,0 +1,42 @@
+{
+  "rightId": "TRAFFIC_CHALLAN_003",
+  "title": "Right to Fair Traffic Challan",
+  "category": "TRAFFIC_RIGHTS",
+  "slug": "fair-traffic-challan",
+
+  "summary": "Traffic fines must follow legal procedure and proper documentation.",
+
+  "plainExplanation": {
+    "whatItMeans": "You should receive proper challan details when fined.",
+    "whyItMatters": "Ensures transparency in traffic enforcement."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Motor Vehicles Act",
+        "section": "Traffic Penalty Rules"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Fine collected without receipt",
+    "Incorrect vehicle details",
+    "Unlawful cash demand"
+  ],
+
+  "exampleScenario": {
+    "situation": "Traffic officer asks for cash without issuing receipt.",
+    "isViolation": true,
+    "explanation": "Driver can refuse and demand official challan."
+  },
+
+  "stepByStepAction": [
+    "Request official receipt",
+    "Record officer details",
+    "Report misconduct if necessary"
+  ],
+
+  "severity": "MEDIUM"
+}

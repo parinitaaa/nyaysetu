@@ -6,3 +6,20 @@ langchain-ollama
 langchain-chroma
 chromadb
 pydantic
+
+
+
+python-multipart
+
+
+numpy
+
+pymupdf
+
+sentence-transformers
+faiss-cpu
+requests
+# Optional OCR fallback:
+pytesseract
+pdf2image
+Pillow

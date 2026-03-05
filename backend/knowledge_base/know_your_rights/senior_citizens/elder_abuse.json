@@ -1,0 +1,42 @@
+{
+  "rightId": "SENIOR_ABUSE_002",
+  "title": "Protection Against Elder Abuse",
+  "category": "SENIOR_CITIZEN_RIGHTS",
+  "slug": "elder-abuse",
+
+  "summary": "Senior citizens are protected against physical, emotional, and financial abuse.",
+
+  "plainExplanation": {
+    "whatItMeans": "Nobody can harm or exploit elderly persons.",
+    "whyItMatters": "Ensures safety and dignity for seniors."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Maintenance and Welfare of Parents and Senior Citizens Act",
+        "section": "Protection Provisions"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Physical abuse",
+    "Financial exploitation",
+    "Emotional harassment"
+  ],
+
+  "exampleScenario": {
+    "situation": "Caregiver misuses senior citizen's money.",
+    "isViolation": true,
+    "explanation": "Legal complaint can be filed."
+  },
+
+  "stepByStepAction": [
+    "Report abuse to authorities",
+    "Seek legal assistance",
+    "File police complaint"
+  ],
+
+  "severity": "HIGH"
+}

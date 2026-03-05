@@ -1,0 +1,248 @@
+{
+  "doc_id": "bbf63ea3-268e-40b2-946e-f04a3b012c6a",
+  "doc_type": "Judgment",
+  "confidence": 1.0,
+  "metadata": {
+    "parties": [
+      {
+        "name": "Mr. Rajesh Kumar",
+        "role": "Appellant",
+        "citations": [
+          {
+            "page": 1,
+            "chunk_id": "p1_c1"
+          }
+        ]
+      },
+      {
+        "name": "ABC Finance Pvt Ltd",
+        "role": "Respondent",
+        "citations": [
+          {
+            "page": 1,
+            "chunk_id": "p1_c1"
+          }
+        ]
+      }
+    ],
+    "dates": [
+      {
+        "label": "Date of Judgment",
+        "value": "15 March 2024",
+        "citations": [
+          {
+            "page": 1,
+            "chunk_id": "p1_c1"
+          }
+        ]
+      }
+    ],
+    "court_or_jurisdiction": {
+      "text": "High Court of Karnataka at Bengaluru",
+      "citations": [
+        {
+          "page": 1,
+          "chunk_id": "p1_c1"
+        }
+      ]
+    },
+    "case_number": {
+      "text": "Civil Appeal No. 1234 of 2023",
+      "citations": [
+        {
+          "page": 1,
+          "chunk_id": "p1_c1"
+        }
+      ]
+    },
+    "judge": {
+      "text": "Hon'ble Justice S. Narayan",
+      "citations": [
+        {
+          "page": 1,
+          "chunk_id": "p1_c1"
+        }
+      ]
+    }
+  },
+  "structured_summary": {
+    "facts_background": {
+      "text": "The appellant had taken a personal loan from the respondent company. Due to financial hardship, the appellant defaulted on EMIs for three months. The respondent initiated recovery proceedings and imposed a penalty charge of INR 75,000.",
+      "citations": [
+        {
+          "page": 1,
+          "chunk_id": "p1_c1"
+        }
+      ]
+    },
+    "issues": {
+      "text": "Whether the penalty imposed by the respondent was excessive and unfair. Whether the recovery proceedings violated principles of natural justice.",
+      "citations": [
+        {
+          "page": 1,
+          "chunk_id": "p1_c1"
+        }
+      ]
+    },
+    "arguments": {
+      "text": "The appellant argued that the penalty was arbitrary and disproportionate. The respondent contended that the penalty was as per the loan agreement terms.",
+      "citations": [
+        {
+          "page": 1,
+          "chunk_id": "p1_c1"
+        }
+      ]
+    },
+    "decision_outcome": {
+      "text": "The appeal is partly allowed. The penalty of INR 75,000 is reduced to INR 20,000. The recovery proceedings shall continue subject to this modification.",
+      "citations": [
+        {
+          "page": 1,
+          "chunk_id": "p1_c1"
+        }
+      ]
+    },
+    "key_reasons": {
+      "text": "The imposed penalty appears disproportionate to the actual loss suffered.",
+      "citations": [
+        {
+          "page": 1,
+          "chunk_id": "p1_c2"
+        }
+      ]
+    },
+    "important_sections_acts": [
+      {
+        "name": "Indian Contract Act, 1872 (Section 74)",
+        "context": "Not found",
+        "citations": [
+          {
+            "page": 1,
+            "chunk_id": "p1_c1"
+          }
+        ]
+      },
+      {
+        "name": "Principles of Natural Justice",
+        "context": "Not found",
+        "citations": [
+          {
+            "page": 1,
+            "chunk_id": "p1_c1"
+          }
+        ]
+      }
+    ],
+    "clauses_obligations": {
+      "text": "The respondent shall refund the excess penalty amount within 30 days.",
+      "citations": [
+        {
+          "page": 1,
+          "chunk_id": "p1_c1"
+        }
+      ]
+    }
+  },
+  "clauses": {
+    "termination": {
+      "text": "Not found",
+      "citations": []
+    },
+    "penalty_liquidated_damages": {
+      "text": "The penalty clause allowed for reasonable compensation but not excessive charges.",
+      "citations": [
+        {
+          "page": 1,
+          "chunk_id": "p1_c2"
+        }
+      ]
+    },
+    "arbitration": {
+      "text": "Not found",
+      "citations": []
+    },
+    "jurisdiction": {
+      "text": "Not found",
+      "citations": []
+    },
+    "refund": {
+      "text": "The respondent shall refund the excess penalty amount within 30 days.",
+      "citations": [
+        {
+          "page": 1,
+          "chunk_id": "p1_c1"
+        }
+      ]
+    },
+    "liability_limitation": {
+      "text": "Not found",
+      "citations": []
+    },
+    "payment_obligations": {
+      "text": "Not found",
+      "citations": []
+    }
+  },
+  "red_flags": [
+    {
+      "title": "Excessive Penalty Imposed",
+      "risk_level": "high",
+      "why_it_matters": "The imposed penalty appears disproportionate to the actual loss suffered.",
+      "suggested_fix": "Reduce the penalty amount.",
+      "citations": [
+        {
+          "page": 1,
+          "chunk_id": "p1_c2"
+        }
+      ]
+    }
+  ],
+  "missing_essentials": [],
+  "actionables": {
+    "confirm_or_ask": [
+      {
+        "item": "Confirm if the respondent has refunded the excess penalty amount within 30 days.",
+        "citations": [
+          {
+            "page": 1,
+            "chunk_id": "p1_c1"
+          }
+        ]
+      }
+    ],
+    "what_to_negotiate": [
+      {
+        "item": "Negotiate for a further reduction in the penalty amount.",
+        "citations": [
+          {
+            "page": 1,
+            "chunk_id": "p1_c1"
+          }
+        ]
+      }
+    ],
+    "evidence_to_keep": [
+      {
+        "item": "Keep evidence of the loan agreement and the penalty imposed.",
+        "citations": [
+          {
+            "page": 1,
+            "chunk_id": "p1_c1"
+          }
+        ]
+      }
+    ],
+    "consult_lawyer_triggers": [
+      {
+        "item": "Consult a lawyer if the respondent fails to refund the excess penalty amount within 30 days.",
+        "citations": [
+          {
+            "page": 1,
+            "chunk_id": "p1_c1"
+          }
+        ]
+      }
+    ]
+  },
+  "disclaimer": "This report is for informational purposes only and is not legal advice. Legal outcomes depend on full facts, evidence, and jurisdiction. Consider consulting a qualified lawyer."
+}

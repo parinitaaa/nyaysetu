@@ -1,0 +1,42 @@
+{
+  "rightId": "TENANT_UTILITIES_003",
+  "title": "Right to Essential Utilities",
+  "category": "TENANT_RIGHTS",
+  "slug": "essential-utilities",
+
+  "summary": "Landlords cannot disconnect essential services like water and electricity.",
+
+  "plainExplanation": {
+    "whatItMeans": "You must have access to water and electricity during tenancy.",
+    "whyItMatters": "Prevents harassment by landlords."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Model Tenancy Act",
+        "section": "Tenant Protection"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Electricity disconnected intentionally",
+    "Water supply blocked",
+    "Utility disruption to force eviction"
+  ],
+
+  "exampleScenario": {
+    "situation": "Landlord cuts electricity to pressure tenant to leave.",
+    "isViolation": true,
+    "explanation": "Tenant can report harassment."
+  },
+
+  "stepByStepAction": [
+    "Notify landlord in writing",
+    "Contact local utility provider",
+    "File complaint with authorities"
+  ],
+
+  "severity": "HIGH"
+}

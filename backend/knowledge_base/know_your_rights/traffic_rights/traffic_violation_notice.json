@@ -1,0 +1,42 @@
+{
+  "rightId": "TRAFFIC_NOTICE_001",
+  "title": "Right to Receive Traffic Violation Notice",
+  "category": "TRAFFIC_RIGHTS",
+  "slug": "traffic-violation-notice",
+
+  "summary": "Drivers must be informed about the traffic rule they violated before being fined.",
+
+  "plainExplanation": {
+    "whatItMeans": "Traffic police must explain the reason for issuing a challan.",
+    "whyItMatters": "Prevents arbitrary fines."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Motor Vehicles Act",
+        "section": "Traffic Enforcement Provisions"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Fine issued without explanation",
+    "No challan receipt provided",
+    "Incorrect violation mentioned"
+  ],
+
+  "exampleScenario": {
+    "situation": "Driver receives fine but police refuse to explain violation.",
+    "isViolation": true,
+    "explanation": "Driver can challenge the fine."
+  },
+
+  "stepByStepAction": [
+    "Ask for challan details",
+    "Check violation online",
+    "Challenge incorrect challan"
+  ],
+
+  "severity": "LOW"
+}

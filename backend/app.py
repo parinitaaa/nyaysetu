@@ -5,12 +5,14 @@ import pandas as pd
 import numpy as np
 import joblib
 import re
-
-
+from routes import case_search
+from routes import doc_analyzer
 from routes import rights
 from routes import chatbot
 from config.settings import APP_NAME, API_VERSION, DEBUG
 from routes import rag_chatbot
+from dotenv import load_dotenv
+load_dotenv()
 # =========================
 # 1️⃣ Create FastAPI app
 # =========================
@@ -35,6 +37,8 @@ def create_app() -> FastAPI:
     app.include_router(rights.router)
     app.include_router(chatbot.router)
     app.include_router(rag_chatbot.router)
+    app.include_router(doc_analyzer.router)
+    app.include_router(case_search.router)
     # =========================
     # 2️⃣ Load model and vectorizer (from old GitHub version)
     # =========================
@@ -126,6 +130,7 @@ def create_app() -> FastAPI:
         }
 
     return app
+
 
 
 # =========================

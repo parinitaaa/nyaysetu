@@ -1,0 +1,42 @@
+{
+  "rightId": "HEALTHCARE_EMERGENCY_001",
+  "title": "Right to Emergency Medical Treatment",
+  "category": "HEALTHCARE_RIGHTS",
+  "slug": "emergency-treatment",
+
+  "summary": "Hospitals must provide emergency treatment regardless of payment ability.",
+
+  "plainExplanation": {
+    "whatItMeans": "No hospital can refuse life-saving treatment.",
+    "whyItMatters": "Protects life during medical emergencies."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Supreme Court Guidelines",
+        "section": "Emergency Medical Care"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Hospital refusing emergency care",
+    "Demanding payment before treatment",
+    "Delay in life saving care"
+  ],
+
+  "exampleScenario": {
+    "situation": "Accident victim denied treatment due to lack of money.",
+    "isViolation": true,
+    "explanation": "Hospitals must treat emergency cases."
+  },
+
+  "stepByStepAction": [
+    "Request immediate treatment",
+    "Document refusal",
+    "File complaint with medical authority"
+  ],
+
+  "severity": "HIGH"
+}
