@@ -1,0 +1,323 @@
+[
+  {
+    "procedureId": "CYBER_COMPLAINT_001",
+    "title": "How to file a cyber crime complaint",
+    "category": "CYBER_PROCEDURE",
+    "keywords": [
+      "cyber complaint",
+      "report cyber fraud",
+      "online fraud complaint",
+      "cyber crime complaint"
+    ],
+    "summary": "A person can report cyber fraud or online crime through the official cyber crime portal or local police station.",
+    "steps": [
+      "Collect evidence such as screenshots, transaction IDs, messages, emails, and phone numbers.",
+      "Visit the official National Cyber Crime Reporting Portal.",
+      "Choose the relevant complaint category and fill in the details.",
+      "Upload supporting evidence.",
+      "Submit the complaint and save the acknowledgement number.",
+      "If the matter is urgent, also inform the local police station."
+    ],
+    "documentsRequired": [
+      "Identity proof",
+      "Screenshots or proof of fraud",
+      "Transaction details if money is involved"
+    ],
+    "whereToFile": [
+      "National Cyber Crime Reporting Portal",
+      "Local Police Station"
+    ],
+    "estimatedTime": "Depends on the complaint and investigation.",
+    "legalBasis": [
+      "Information Technology Act 2000"
+    ]
+  },
+  {
+    "procedureId": "CONSUMER_COMPLAINT_001",
+    "title": "How to file a consumer complaint",
+    "category": "CONSUMER_PROCEDURE",
+    "keywords": [
+      "consumer complaint",
+      "defective product complaint",
+      "consumer court",
+      "file consumer case"
+    ],
+    "summary": "A consumer can file a complaint for defective goods or deficient services.",
+    "steps": [
+      "Keep the bill, invoice, warranty, and all proof related to the product or service.",
+      "Contact the seller or service provider and request resolution.",
+      "If the issue is not solved, prepare your complaint with all facts and evidence.",
+      "File the complaint through the appropriate consumer dispute redressal mechanism.",
+      "Attach documents and keep acknowledgement safely."
+    ],
+    "documentsRequired": [
+      "Purchase bill",
+      "Warranty card if available",
+      "Proof of defect or deficiency",
+      "Identity proof"
+    ],
+    "whereToFile": [
+      "Consumer dispute redressal forum / official online filing portal"
+    ],
+    "estimatedTime": "Varies by forum and case complexity.",
+    "legalBasis": [
+      "Consumer Protection Act 2019"
+    ]
+  },
+  {
+    "title": "Filing a Complaint Under the Consumer Protection Act, 2019",
+    "summary": "Consumers or associations can file electronic complaints online through the INGRAM portal or offline with consumer protection commissions for rights violations.",
+    "steps": [
+      "Visit the Integrated Grievance Redressal Mechanism portal and register yourself as a consumer.",
+      "Fill in the required details and submit the documents as per the rules.",
+      "Submit the complaint and receive a Unique Grievance ID."
+    ],
+    "documentsRequired": [
+      "name, contact details and address of the complainant and the seller",
+      "details of the complaint",
+      "relevant documents as per Rule 12(1) of the Consumer Protection (Consumer Disputes Redressal Commissions) Rules, 2020"
+    ],
+    "whereToFile": [
+      "Integrated Grievance Redressal Mechanism portal",
+      "district or state commissions"
+    ],
+    "legalBasis": [
+      "Consumer Protection Act, 2019",
+      "Consumer Protection (Consumer Disputes Redressal Commissions) Rules, 2020"
+    ]
+  },
+  {
+    "title": "Filing an FIR for Animal Abuse",
+    "summary": "Report abuse of street animals to the police, and seek their assistance or contact animal rights organizations for help.",
+    "steps": [
+      "Go to the police station to register an FIR for the abuse.",
+      "Gather evidence such as videos or photos of the abuse and keep them safe.",
+      "If the local police do not help, call the Animal Welfare Board of India or contact animal rights groups like People for Animals or Blue Cross for support."
+    ],
+    "documentsRequired": [
+      "FIR document",
+      "Evidence of abuse"
+    ],
+    "whereToFile": [
+      "Police station or the local police helpline",
+      "Animal Welfare Board of India's helpline",
+      "Contact details of animal rights groups"
+    ],
+    "legalBasis": [
+      "Prevention of Cruelty to Animals Act, 1960",
+      "Sections 428 and 429 of Indian Penal Code",
+      "Section 506 IPC"
+    ]
+  },
+  {
+    "title": "Accessing Legal Information",
+    "summary": "Nyaaya is an accessible digital legal resource aimed at providing legal knowledge to empower individuals in India.",
+    "steps": [
+      "Navigate to the Nyaaya homepage",
+      "Search for relevant legal topics",
+      "Read the information provided"
+    ],
+    "documentsRequired": [
+      "None"
+    ],
+    "whereToFile": [
+      "None"
+    ],
+    "legalBasis": [
+      "None"
+    ]
+  },
+  {
+    "title": "Cheque Bounce Procedure",
+    "summary": "The procedure for dealing with a bounced cheque, regardless of the issuer's intent, is outlined. It involves treating the act as illegal and a crime.",
+    "steps": [
+      "Report the bounced cheque",
+      "Obtain a dishonored cheque notice",
+      "File a complaint with the appropriate authority"
+    ],
+    "documentsRequired": [
+      "Dishonored cheque notice",
+      "Complaint form"
+    ],
+    "whereToFile": [
+      "Individual bank branch",
+      "District consumer forum"
+    ],
+    "legalBasis": [
+      "Cheque Act of India"
+    ]
+  },
+  {
+    "title": "What to do if your cheque bounces",
+    "summary": "If your cheque bounces, it is advisable to rush to your bank branch, inform the staff about the situation, and get a formal note.",
+    "steps": [
+      "Rush to your bank branch",
+      "Inform the staff about the situation",
+      "Get a formal note"
+    ],
+    "documentsRequired": [
+      "Cheque",
+      "Formal note"
+    ],
+    "whereToFile": [
+      "Bank branch"
+    ],
+    "legalBasis": [
+      "Banking Act"
+    ]
+  },
+  {
+    "title": "Cheque Dishonour Offence Procedure",
+    "summary": "A person in charge of a company may be exempt from liability if they prove lack of knowledge or preventive efforts against cheque dishonour.",
+    "steps": [
+      "File a complaint regarding the dishonoured cheque",
+      "Person in charge of the company to provide evidence of their efforts or lack of knowledge",
+      "Party to be judged based on evidence provided during the trial"
+    ],
+    "documentsRequired": [
+      "Complaint Form",
+      "Evidence Documents"
+    ],
+    "whereToFile": [
+      "local court"
+    ],
+    "legalBasis": [
+      "cheque dishonour laws"
+    ]
+  },
+  {
+    "title": "Cashing a Bearer Cheque",
+    "summary": "A person can present a bearer cheque to any bank and get the cash amount instantly, without requiring verification or opening an account.",
+    "steps": [
+      "Identify the type of cheque (Bearer or Order cheque).",
+      "If it's a Bearer cheque, visit any branch of the issuing bank.",
+      "Present the cheque for clearance to the bank teller."
+    ],
+    "documentsRequired": [
+      "cheque"
+    ],
+    "whereToFile": [
+      "bank branch"
+    ],
+    "legalBasis": [
+      "Unwritten customs and practices"
+    ]
+  },
+  {
+    "title": "Aiding a Public Servant in Bribery",
+    "summary": "Aiding a public servant in bribery, even without the commission of the act, is a punishable offense.",
+    "steps": [
+      "1. Identify the act of offering a bribe to a public servant.",
+      "2. Recognize the legal implication of such actions.",
+      "3. Report the incident to the appropriate authority."
+    ],
+    "documentsRequired": [
+      "bribery act",
+      "public servant code of conduct"
+    ],
+    "whereToFile": [
+      "local police station",
+      "online legal reporting portal"
+    ],
+    "legalBasis": [
+      "Prevention of Corruption Act"
+    ]
+  },
+  {
+    "title": "Filing an FIR",
+    "summary": "Filing an FIR provides immediate protection against harassment, with assistance from government helplines and police intervention.",
+    "steps": [
+      "Contact a government helpline for immediate advice and police assistance",
+      "Visit the police station to file an FIR",
+      "Confidently present your complaint, prepared with the relevant law in mind"
+    ],
+    "documentsRequired": [
+      "no specific documents required as mentioned in the text"
+    ],
+    "whereToFile": [
+      "police station"
+    ],
+    "legalBasis": [
+      "no specific act or law mentioned in the text"
+    ]
+  },
+  {
+    "title": "Legal Recognition and Rights of Same-Sex Couples, Civil Unions, and Domestic Partnerships in India",
+    "summary": "Post discusses the recent changes in Indian law that decriminalize consensual same-sex relations and recognize the rights of individuals to express their gender identity.",
+    "steps": [
+      "Understand the legal changes post-2018",
+      "Acknowledge the right to love and consensual relationships",
+      "Recognize the right to gender identity",
+      "Change name and identification documents to reflect gender identity"
+    ],
+    "documentsRequired": [
+      "NALSA judgment of 2014",
+      "Navtej Singh Johar case judgment of 2018"
+    ],
+    "whereToFile": [
+      "Nyaaya platform",
+      "National Legal Services Authority portal"
+    ],
+    "legalBasis": [
+      "National Legal Services Authority v. Union of India (2014) 5 SCC 438",
+      "Navtej Singh Johar and Ors. v. Union of India (UOI) and Ors. (2018) 10 SCC 1"
+    ]
+  },
+  {
+    "title": "Filing Complaint for Non-Consensual Sexual Intercourse",
+    "summary": "Men/trans men cannot directly file for rape, but they can claim assault for non-consensual sexual intercourse.",
+    "steps": [
+      "File an assault complaint",
+      "Initiate police report",
+      "Participate in investigation"
+    ],
+    "documentsRequired": [
+      "Assault complaint form",
+      "ID proof"
+    ],
+    "whereToFile": [
+      "Local police station",
+      "Online police portal"
+    ],
+    "legalBasis": [
+      "Sections 376 and 376A of the Indian Penal Code, 1860"
+    ]
+  },
+  {
+    "title": "Reporting Online Harassment",
+    "summary": "Guidance on how to report online abuse, including threats of violence.",
+    "steps": [
+      "Review the platform's policy on abuse and follow the recommended steps.",
+      "Block or report the abuser if your sexual orientation or gender identity is targeted without permission.",
+      "If faced with severe and repetitive harassment, file a complaint with local law enforcement or cyber cell."
+    ],
+    "documentsRequired": [],
+    "whereToFile": [
+      "local police station",
+      "cyber cell"
+    ],
+    "legalBasis": [
+      "local laws against online harassment"
+    ]
+  },
+  {
+    "title": "Filing an FIR for Extortion or Blackmail",
+    "summary": "To report crimes of extortion or blackmail under Indian law, file an FIR with relevant sections of the Indian Penal Code, 1860.",
+    "steps": [
+      "Call helplines for immediate assistance.",
+      "File an FIR with the police using Section 383 of the Indian Penal Code, 1860, for extortion.",
+      "File an FIR with the police using Section 503 of the Indian Penal Code, 1860, for blackmail."
+    ],
+    "documentsRequired": [
+      "none"
+    ],
+    "whereToFile": [
+      "police station nearest you",
+      "online police portals"
+    ],
+    "legalBasis": [
+      "Section 383, Indian Penal Code, 1908",
+      "Section 503, Indian Penal Code, 1908"
+    ]
+  }
+]

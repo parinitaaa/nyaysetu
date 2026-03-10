@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
-from rag import ask_question
+from chatbot.rag_pipeline import ask_question
 
 router = APIRouter(prefix="/rag", tags=["RAG Chatbot"])
 

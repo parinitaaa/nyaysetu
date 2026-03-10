@@ -1,12 +1,12 @@
 import os, uuid, json
 from fastapi import APIRouter, UploadFile, File, HTTPException
 
-from document_analyzer.pdf_extract import extract_pages, looks_scanned_or_empty
-from document_analyzer.chunking import chunk_pages
-from document_analyzer.embeddings import Embedder
-from document_analyzer.vector_store_faiss import FaissStore
-from document_analyzer.llm import OllamaLLM
-from document_analyzer.analyzer import DocumentAnalyzer
+from backend.document_analyzer.pdf_extract import extract_pages, looks_scanned_or_empty
+from backend.document_analyzer.chunking import chunk_pages
+from backend.document_analyzer.embeddings import Embedder
+from backend.document_analyzer.vector_store_faiss import FaissStore
+from backend.document_analyzer.llm import OllamaLLM
+from backend.document_analyzer.analyzer import DocumentAnalyzer
 
 router = APIRouter(prefix="/doc", tags=["Document Analyzer"])
 
