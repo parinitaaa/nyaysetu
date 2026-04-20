@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
 
-from services.indiankanoon_client import IndianKanoonClient
+from nyaysetu.backend.services.kanoon_service import IndianKanoonClient
 from services.text_utils import html_to_text
 from services.case_summarizer import summarize_case
 from config.settings import IK_PUBLIC_BASE
