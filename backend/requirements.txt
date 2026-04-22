@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+langchain
+langchain-community
+langchain-ollama
+langchain-chroma
+chromadb
+pydantic
+faiss-cpu
+ollama
+sentence-transformers
+
+torch
+transformers
+sentencepiece
+PyPDF2
+python-multipart

@@ -1,0 +1,27 @@
+{
+  "rightId": "EMPLOY_TERM_002",
+  "title": "Rights Related to Termination",
+  "category": "EMPLOYMENT_RIGHTS",
+  "slug": "termination",
+
+  "summary": "Termination of employment must follow lawful procedure and fairness.",
+
+  "plainExplanation": {
+    "whatItMeans": "Employees cannot be terminated arbitrarily.",
+    "whyItMatters": "Protects livelihood and dignity."
+  },
+
+  "exampleScenario": {
+    "situation": "An employee is fired without notice or reason.",
+    "isViolation": true,
+    "explanation": "Arbitrary termination is illegal."
+  },
+
+  "stepByStepAction": [
+    "Review employment contract",
+    "Seek written reason",
+    "Approach labour authority"
+  ],
+
+  "severity": "HIGH"
+}

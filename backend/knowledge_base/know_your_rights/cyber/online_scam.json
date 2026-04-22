@@ -1,0 +1,27 @@
+{
+  "rightId": "CYBER_SCAM_003",
+  "title": "Right Against Online Scams",
+  "category": "CYBER_RIGHTS",
+  "slug": "online-scam",
+
+  "summary": "Online scams involving impersonation, fraud, or cheating are criminal offences.",
+
+  "plainExplanation": {
+    "whatItMeans": "Digital fraudsters can be legally prosecuted.",
+    "whyItMatters": "Protects financial security."
+  },
+
+  "exampleScenario": {
+    "situation": "A fake bank message tricks user into sharing OTP.",
+    "isViolation": true,
+    "explanation": "OTP fraud is an online scam."
+  },
+
+  "stepByStepAction": [
+    "Block transaction immediately",
+    "Report to bank",
+    "File cyber crime complaint"
+  ],
+
+  "severity": "CRITICAL"
+}

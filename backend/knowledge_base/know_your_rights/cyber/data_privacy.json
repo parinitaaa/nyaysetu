@@ -1,0 +1,42 @@
+{
+  "rightId": "CYBER_PRIVACY_001",
+  "title": "Right to Data Privacy",
+  "category": "CYBER_RIGHTS",
+  "slug": "data-privacy",
+
+  "summary": "Individuals have the right to protection of their personal data and privacy.",
+
+  "plainExplanation": {
+    "whatItMeans": "Your personal data cannot be misused without consent.",
+    "whyItMatters": "Prevents surveillance and identity misuse."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Information Technology Act",
+        "section": "Section 43A, 72A"
+      }
+    ]
+  },
+
+  "whatCountsAsViolation": [
+    "Data leakage",
+    "Unauthorized data sharing",
+    "Identity theft"
+  ],
+
+  "exampleScenario": {
+    "situation": "A company sells user data without consent.",
+    "isViolation": true,
+    "explanation": "Unauthorized data sharing is illegal."
+  },
+
+  "stepByStepAction": [
+    "Document evidence",
+    "Complain to organization",
+    "Report to cyber authorities"
+  ],
+
+  "severity": "HIGH"
+}

@@ -1,0 +1,570 @@
+[
+  {
+    "question_id": 1,
+    "question": "How can I file a consumer complaint?",
+    "answer": "You can file a consumer complaint online via the National Consumer Helpline or at your local Consumer Court.",
+    "category": "Consumer Law",
+    "keywords": ["consumer complaint", "file", "consumer court"]
+  },
+  {
+    "question_id": 2,
+    "question": "What is the process of getting a PAN card?",
+    "answer": "You can apply for a PAN card online on the NSDL or UTIITSL website by submitting the required documents.",
+    "category": "Government Services",
+    "keywords": ["PAN card", "apply", "procedure"]
+  },
+  {
+    "question_id": 3,
+    "question": "How do I register a company in India?",
+    "answer": "You can register a company through the Ministry of Corporate Affairs website by following the company incorporation process.",
+    "category": "Corporate Law",
+    "keywords": ["company registration", "incorporation"]
+  },
+  {
+    "question_id": 4,
+    "question": "What are my rights as a tenant?",
+    "answer": "Tenants have the right to a habitable property, privacy, and protection against unfair eviction under the Rent Control Act.",
+    "category": "Property Law",
+    "keywords": ["tenant rights", "eviction", "rent"]
+  },
+  {
+    "question_id": 5,
+    "question": "How do I file a case in small claims court?",
+    "answer": "Approach your local Small Causes Court, submit a petition, and follow the court procedure for civil claims under the limit specified.",
+    "category": "Civil Law",
+    "keywords": ["small claims", "court", "file case"]
+  },
+  {
+    "question_id": 6,
+    "question": "What is a legal notice and how do I send one?",
+    "answer": "A legal notice is a formal communication before initiating legal proceedings. It can be drafted by a lawyer and sent via registered post.",
+    "category": "Civil Law",
+    "keywords": ["legal notice", "lawyer", "formal"]
+  },
+  {
+    "question_id": 7,
+    "question": "How do I apply for a divorce in India?",
+    "answer": "You can file a petition for divorce under the Hindu Marriage Act or Special Marriage Act in the family court.",
+    "category": "Family Law",
+    "keywords": ["divorce", "file", "family court"]
+  },
+  {
+    "question_id": 8,
+    "question": "Can I get compensation for road accidents?",
+    "answer": "Yes, you can claim compensation under the Motor Vehicles Act by filing a claim with the Motor Accident Claims Tribunal.",
+    "category": "Personal Injury",
+    "keywords": ["accident", "compensation", "motor vehicles"]
+  },
+  {
+    "question_id": 9,
+    "question": "What is the procedure for applying for a passport?",
+    "answer": "Submit your application on the Passport Seva portal, schedule an appointment, and complete verification at the Passport Office.",
+    "category": "Government Services",
+    "keywords": ["passport", "apply", "procedure"]
+  },
+  {
+    "question_id": 10,
+    "question": "How can I register a trademark?",
+    "answer": "File a trademark application with the Intellectual Property India office online or offline, then complete examination and publication.",
+    "category": "Intellectual Property",
+    "keywords": ["trademark", "register", "application"]
+  },
+  {
+    "question_id": 11,
+    "question": "What are my rights under the Consumer Protection Act?",
+    "answer": "You have the right to safety, information, choice, and redressal for goods and services purchased.",
+    "category": "Consumer Law",
+    "keywords": ["consumer rights", "protection"]
+  },
+  {
+    "question_id": 12,
+    "question": "How do I file an FIR for theft?",
+    "answer": "Visit the local police station or use the online portal, provide details of the incident, and submit your complaint.",
+    "category": "Criminal Law",
+    "keywords": ["FIR", "theft", "police"]
+  },
+  {
+    "question_id": 13,
+    "question": "Can I contest a traffic challan?",
+    "answer": "Yes, you can contest it in the Traffic Police Court by submitting evidence and appearing on the scheduled date.",
+    "category": "Traffic Law",
+    "keywords": ["traffic challan", "contest", "fine"]
+  },
+  {
+    "question_id": 14,
+    "question": "What is the minimum wage in India?",
+    "answer": "Minimum wages are set by the respective state governments and vary based on employment type and skill level.",
+    "category": "Labour Law",
+    "keywords": ["minimum wage", "employment"]
+  },
+  {
+    "question_id": 15,
+    "question": "How do I draft a rental agreement?",
+    "answer": "You can draft a rental agreement including rent, duration, and obligations, then get it registered at the local sub-registrar office.",
+    "category": "Property Law",
+    "keywords": ["rental agreement", "draft", "register"]
+  },
+  {
+    "question_id": 16,
+    "question": "How do I file a case for domestic violence?",
+    "answer": "File a complaint under the Protection of Women from Domestic Violence Act at the police or a protection officer.",
+    "category": "Family Law",
+    "keywords": ["domestic violence", "complaint", "act"]
+  },
+  {
+    "question_id": 17,
+    "question": "Can I claim insurance for health expenses?",
+    "answer": "Yes, you can file a claim with your insurance provider with all necessary medical documents.",
+    "category": "Insurance Law",
+    "keywords": ["health insurance", "claim"]
+  },
+  {
+    "question_id": 18,
+    "question": "What is a power of attorney and how do I get one?",
+    "answer": "A power of attorney is a legal document allowing someone to act on your behalf. It can be drafted by a lawyer and notarized.",
+    "category": "Civil Law",
+    "keywords": ["power of attorney", "legal document"]
+  },
+  {
+    "question_id": 19,
+    "question": "How do I challenge a property tax notice?",
+    "answer": "Submit a representation to the local municipal office with supporting documents, or approach the assessment tribunal.",
+    "category": "Property Law",
+    "keywords": ["property tax", "challenge"]
+  },
+  {
+    "question_id": 20,
+    "question": "What are the steps to register a will?",
+    "answer": "Draft a will specifying your wishes, sign it in front of witnesses, and optionally register it at the local sub-registrar office.",
+    "category": "Estate Law",
+    "keywords": ["will", "register", "inheritance"]
+  },
+  
+  {
+    "question_id": 21,
+    "question": "How can I file a consumer complaint?",
+    "answer": "You can file a consumer complaint online via the National Consumer Helpline or at your local Consumer Court.",
+    "category": "Consumer Law",
+    "keywords": ["consumer complaint", "file", "consumer court"]
+  },
+  {
+    "question_id": 22,
+    "question": "Can I return a defective product?",
+    "answer": "Yes, you can return defective goods to the seller within the warranty period and claim a refund or replacement.",
+    "category": "Consumer Law",
+    "keywords": ["defective product", "return", "refund"]
+  },
+  {
+    "question_id": 23,
+    "question": "How do I lodge a complaint about unfair trade practices?",
+    "answer": "You can approach the District Consumer Disputes Redressal Forum with details of the unfair trade practices.",
+    "category": "Consumer Law",
+    "keywords": ["unfair trade", "complaint", "consumer forum"]
+  },
+  {
+    "question_id": 24,
+    "question": "Can I claim compensation for services not provided?",
+    "answer": "Yes, you can file a complaint under the Consumer Protection Act for deficient services and claim compensation.",
+    "category": "Consumer Law",
+    "keywords": ["deficient service", "compensation", "consumer rights"]
+  },
+  {
+    "question_id": 25,
+    "question": "What is the process to file an online consumer complaint?",
+    "answer": "Visit the National Consumer Helpline website, register your complaint, and follow up online or via call.",
+    "category": "Consumer Law",
+    "keywords": ["online complaint", "consumer", "file"]
+  },
+  {
+    "question_id": 26,
+    "question": "How long does a consumer case take?",
+    "answer": "Consumer case timelines vary but district forums generally take 3-6 months depending on complexity.",
+    "category": "Consumer Law",
+    "keywords": ["consumer case", "duration", "timeline"]
+  },
+  {
+    "question_id": 27,
+    "question": "What documents are required for a consumer complaint?",
+    "answer": "You need a copy of the invoice, warranty, communication with seller, and ID proof to file a complaint.",
+    "category": "Consumer Law",
+    "keywords": ["documents", "consumer complaint", "invoice"]
+  },
+  {
+    "question_id": 28,
+    "question": "Can I file a complaint against an e-commerce platform?",
+    "answer": "Yes, you can file a complaint online through the National Consumer Helpline or the respective consumer forum.",
+    "category": "Consumer Law",
+    "keywords": ["e-commerce", "complaint", "consumer forum"]
+  },
+  {
+    "question_id": 29,
+    "question": "What rights do consumers have regarding online purchases?",
+    "answer": "Consumers have the right to safe products, clear information, refund/replacement, and grievance redressal.",
+    "category": "Consumer Law",
+    "keywords": ["online purchase", "consumer rights", "refund"]
+  },
+  {
+    "question_id": 30,
+    "question": "How can I escalate a consumer complaint not resolved by the seller?",
+    "answer": "You can approach the District Consumer Forum or State Consumer Commission with the complaint documents.",
+    "category": "Consumer Law",
+    "keywords": ["escalate", "consumer complaint", "forum"]
+  },
+  
+  {
+    "question_id": 31,
+    "question": "What is cybercrime?",
+    "answer": "Cybercrime refers to illegal activities conducted via the internet, including hacking, phishing, and identity theft.",
+    "category": "Cyber Law",
+    "keywords": ["cybercrime", "internet crime", "hacking"]
+  },
+  {
+    "question_id": 32,
+    "question": "How can I report online fraud?",
+    "answer": "You can report online fraud to the Cyber Crime Cell of your city or use the National Cyber Crime Reporting Portal.",
+    "category": "Cyber Law",
+    "keywords": ["online fraud", "report", "cyber crime"]
+  },
+  {
+    "question_id": 33,
+    "question": "What is phishing?",
+    "answer": "Phishing is a cyber attack where attackers trick you into revealing personal information like passwords or bank details.",
+    "category": "Cyber Law",
+    "keywords": ["phishing", "cyber attack", "scam"]
+  },
+  {
+    "question_id": 34,
+    "question": "Is hacking someone’s account illegal?",
+    "answer": "Yes, hacking into someone else’s account without permission is a criminal offense under the IT Act.",
+    "category": "Cyber Law",
+    "keywords": ["hacking", "illegal", "IT Act"]
+  },
+  {
+    "question_id": 35,
+    "question": "How do I secure my social media accounts?",
+    "answer": "Use strong passwords, enable two-factor authentication, and avoid sharing login details to secure your accounts.",
+    "category": "Cyber Law",
+    "keywords": ["social media", "security", "2FA"]
+  },
+  {
+    "question_id": 36,
+    "question": "Can I take legal action for online harassment?",
+    "answer": "Yes, you can file a complaint under the IT Act and Penal Code for online harassment or cyber bullying.",
+    "category": "Cyber Law",
+    "keywords": ["online harassment", "cyber bullying", "legal action"]
+  },
+  {
+    "question_id": 37,
+    "question": "What is identity theft online?",
+    "answer": "Identity theft occurs when someone steals your personal information to commit fraud or crime.",
+    "category": "Cyber Law",
+    "keywords": ["identity theft", "cybercrime", "fraud"]
+  },
+  {
+    "question_id": 38,
+    "question": "How can I report cyberstalking?",
+    "answer": "You can report cyberstalking to the Cyber Crime Cell or via the National Cyber Crime Portal with evidence.",
+    "category": "Cyber Law",
+    "keywords": ["cyberstalking", "report", "evidence"]
+  },
+  {
+    "question_id": 39,
+    "question": "Are online financial scams punishable?",
+    "answer": "Yes, perpetrators of online financial scams can be prosecuted under the IT Act and Indian Penal Code.",
+    "category": "Cyber Law",
+    "keywords": ["financial scam", "online fraud", "punishable"]
+  },
+  {
+    "question_id":40,
+    "question": "What should I do if my account is hacked?",
+    "answer": "Immediately change your passwords, report to the platform, and file a complaint with the Cyber Crime Cell.",
+    "category": "Cyber Law",
+    "keywords": ["account hacked", "report", "cyber crime"]
+  },
+  
+  {
+    "question_id": 41,
+    "question": "What are my rights as an employee?",
+    "answer": "Employees have rights including minimum wage, safe working conditions, leave, and protection against unfair dismissal.",
+    "category": "Employment Law",
+    "keywords": ["employee rights", "employment", "protection"]
+  },
+  {
+    "question_id": 42,
+    "question": "How do I file a complaint against harassment at work?",
+    "answer": "You can approach the Internal Complaints Committee under the Sexual Harassment of Women at Workplace Act.",
+    "category": "Employment Law",
+    "keywords": ["harassment", "complaint", "workplace"]
+  },
+  {
+    "question_id": 43,
+    "question": "What is minimum wage in India?",
+    "answer": "Minimum wages are set by state governments and vary according to job type, skill, and region.",
+    "category": "Employment Law",
+    "keywords": ["minimum wage", "employment", "salary"]
+  },
+  {
+    "question_id": 44,
+    "question": "Can I resign and get full gratuity?",
+    "answer": "Yes, if you have completed the required years of service and follow company procedures, you are entitled to gratuity.",
+    "category": "Employment Law",
+    "keywords": ["resign", "gratuity", "employee"]
+  },
+  {
+    "question_id": 45,
+    "question": "How do I report unpaid salary?",
+    "answer": "You can approach the labor commissioner or labor court to file a complaint for unpaid wages.",
+    "category": "Employment Law",
+    "keywords": ["unpaid salary", "report", "labor court"]
+  },
+  {
+    "question_id": 46,
+    "question": "What are the rules for working hours and overtime?",
+    "answer": "The Factories Act and Shops & Establishments Act regulate working hours, rest intervals, and overtime payment.",
+    "category": "Employment Law",
+    "keywords": ["working hours", "overtime", "employment law"]
+  },
+  {
+    "question_id": 47,
+    "question": "Can my employer terminate me without notice?",
+    "answer": "No, termination without notice is illegal unless it violates disciplinary rules; labor law requires proper notice.",
+    "category": "Employment Law",
+    "keywords": ["termination", "notice", "employee rights"]
+  },
+  {
+    "question_id": 48,
+    "question": "How do I apply for maternity leave?",
+    "answer": "Female employees can apply for maternity leave under the Maternity Benefit Act, typically 26 weeks for the first child.",
+    "category": "Employment Law",
+    "keywords": ["maternity leave", "employee rights", "benefit"]
+  },
+  {
+    "question_id": 49,
+    "question": "Can I claim provident fund benefits?",
+    "answer": "Yes, employees contributing to EPF can claim the accumulated fund and interest according to EPF rules.",
+    "category": "Employment Law",
+    "keywords": ["provident fund", "claim", "EPF"]
+  },
+  {
+    "question_id": 50,
+    "question": "What is sexual harassment at workplace?",
+    "answer": "Sexual harassment includes unwelcome advances, comments, or behavior affecting dignity at the workplace.",
+    "category": "Employment Law",
+    "keywords": ["sexual harassment", "workplace", "complaint"]
+  },
+  
+  {
+    "question_id": 51,
+    "question": "How do I file an FIR for theft?",
+    "answer": "Visit your local police station or use the online portal, provide details of the incident, and submit your complaint.",
+    "category": "Police Law",
+    "keywords": ["FIR", "theft", "police"]
+  },
+  {
+    "question_id": 52,
+    "question": "Can I file a complaint for domestic violence?",
+    "answer": "Yes, you can file a complaint at the local police station under the Protection of Women from Domestic Violence Act.",
+    "category": "Police Law",
+    "keywords": ["domestic violence", "complaint", "police"]
+  },
+  {
+    "question_id": 53,
+    "question": "How do I report cybercrime to the police?",
+    "answer": "You can report cybercrime at the Cyber Crime Cell of your city or via the National Cyber Crime Reporting Portal.",
+    "category": "Police Law",
+    "keywords": ["cybercrime", "report", "police"]
+  },
+  {
+    "question_id": 54,
+    "question": "What is the process for filing a complaint against assault?",
+    "answer": "Approach the nearest police station and register a First Information Report with all evidence and witness details.",
+    "category": "Police Law",
+    "keywords": ["assault", "complaint", "FIR"]
+  },
+  {
+    "question_id": 55,
+    "question": "Can I file a missing person report?",
+    "answer": "Yes, report the case at your local police station providing the missing person’s details and photo.",
+    "category": "Police Law",
+    "keywords": ["missing person", "FIR", "report"]
+  },
+  {
+    "question_id": 56,
+    "question": "How do I check the status of my FIR?",
+    "answer": "You can check FIR status online via your state police portal or visit the police station for updates.",
+    "category": "Police Law",
+    "keywords": ["FIR status", "police", "check"]
+  },
+  {
+    "question_id": 57,
+    "question": "Can I lodge a complaint anonymously?",
+    "answer": "Yes, you may report non-emergency complaints anonymously, though investigations may require your identity.",
+    "category": "Police Law",
+    "keywords": ["anonymous complaint", "police", "report"]
+  },
+  {
+    "question_id": 58,
+    "question": "What is the procedure for filing a traffic violation complaint?",
+    "answer": "Submit the details of the traffic violation online or at your local traffic police station with evidence if available.",
+    "category": "Police Law",
+    "keywords": ["traffic violation", "complaint", "police"]
+  },
+  {
+    "question_id": 59,
+    "question": "How do I report bribery or corruption?",
+    "answer": "You can report corruption to the Anti-Corruption Bureau or local police with evidence of bribery.",
+    "category": "Police Law",
+    "keywords": ["bribery", "corruption", "report"]
+  },
+  {
+    "question_id": 60,
+    "question": "Can I withdraw a filed FIR?",
+    "answer": "Yes, in some cases you can request the police or court to withdraw an FIR, but it depends on the legal provisions and case type.",
+    "category": "Police Law",
+    "keywords": ["FIR", "withdraw", "police"]
+  },
+  
+  {
+    "question_id": 61,
+    "question": "What are my rights as a student?",
+    "answer": "Students have rights to education, safety, fair assessment, and protection from discrimination and harassment.",
+    "category": "Student Law",
+    "keywords": ["student rights", "education", "protection"]
+  },
+  {
+    "question_id": 62,
+    "question": "Can I appeal my exam results?",
+    "answer": "Yes, most universities allow students to file an appeal or re-evaluation request within the stipulated time frame.",
+    "category": "Student Law",
+    "keywords": ["exam result", "appeal", "re-evaluation"]
+  },
+  {
+    "question_id": 63,
+    "question": "What is the procedure for student harassment complaints?",
+    "answer": "You can approach the university's Internal Complaints Committee or Student Grievance Cell with details of the harassment.",
+    "category": "Student Law",
+    "keywords": ["student harassment", "complaint", "grievance"]
+  },
+  {
+    "question_id": 64,
+    "question": "How do I apply for a scholarship?",
+    "answer": "Check eligibility criteria, fill the application online or offline, and submit necessary documents to the relevant authority.",
+    "category": "Student Law",
+    "keywords": ["scholarship", "apply", "eligibility"]
+  },
+  {
+    "question_id": 65,
+    "question": "Can a school expel a student unfairly?",
+    "answer": "No, schools must follow proper disciplinary procedures and provide notice; unfair expulsion can be challenged legally.",
+    "category": "Student Law",
+    "keywords": ["expel student", "unfair", "disciplinary"]
+  },
+  {
+    "question_id": 66,
+    "question": "What is ragging and how is it punished?",
+    "answer": "Ragging is harassment or bullying of students; it is illegal under the Anti-Ragging Act and punishable with fines and imprisonment.",
+    "category": "Student Law",
+    "keywords": ["ragging", "illegal", "punishment"]
+  },
+  {
+    "question_id": 67,
+    "question": "Can I get legal help for exam malpractice?",
+    "answer": "Yes, you can approach educational authorities or courts if accused falsely or to report malpractice incidents.",
+    "category": "Student Law",
+    "keywords": ["exam malpractice", "legal help", "student"]
+  },
+  {
+    "question_id": 68,
+    "question": "How do I protect my student rights at college?",
+    "answer": "Document all incidents, approach the grievance cell, and seek legal counsel if needed to ensure rights are protected.",
+    "category": "Student Law",
+    "keywords": ["student rights", "college", "grievance"]
+  },
+  {
+    "question_id": 69,
+    "question": "Can schools charge arbitrary fees?",
+    "answer": "No, schools must comply with the fee regulations set by the state education board; arbitrary charges can be challenged.",
+    "category": "Student Law",
+    "keywords": ["school fees", "regulation", "challenge"]
+  },
+  {
+    "question_id": 70,
+    "question": "How do I report discrimination at school or college?",
+    "answer": "You can report discrimination to the Internal Complaints Committee or the appropriate educational authority.",
+    "category": "Student Law",
+    "keywords": ["discrimination", "report", "student"]
+  },
+  
+  {
+    "question_id": 71,
+    "question": "What are the legal protections for women against domestic violence?",
+    "answer": "Women are protected under the Protection of Women from Domestic Violence Act and can file complaints at police stations or protection officers.",
+    "category": "Women Law",
+    "keywords": ["domestic violence", "women", "protection"]
+  },
+  {
+    "question_id": 72,
+    "question": "Can a woman file a complaint for workplace harassment?",
+    "answer": "Yes, under the Sexual Harassment of Women at Workplace Act, a complaint can be filed with the Internal Complaints Committee.",
+    "category": "Women Law",
+    "keywords": ["workplace harassment", "women", "complaint"]
+  },
+  {
+    "question_id": 73,
+    "question": "How do I report dowry harassment?",
+    "answer": "You can file a complaint under the Dowry Prohibition Act at the police station or magistrate court.",
+    "category": "Women Law",
+    "keywords": ["dowry harassment", "report", "police"]
+  },
+  {
+    "question_id": 74,
+    "question": "What is the process for filing sexual assault complaints?",
+    "answer": "You can file an FIR with the local police, approach the nearest women’s help cell, and consult a lawyer if needed.",
+    "category": "Women Law",
+    "keywords": ["sexual assault", "complaint", "police"]
+  },
+  {
+    "question_id": 75,
+    "question": "Can women get legal help for marital disputes?",
+    "answer": "Yes, women can approach family courts or legal aid centers to resolve marital disputes or file for divorce if necessary.",
+    "category": "Women Law",
+    "keywords": ["marital dispute", "legal help", "women"]
+  },
+  {
+    "question_id": 76,
+    "question": "What are the protections against human trafficking for women?",
+    "answer": "Women are protected under the Immoral Traffic (Prevention) Act and can report cases to police or NGOs.",
+    "category": "Women Law",
+    "keywords": ["human trafficking", "women", "protection"]
+  },
+  {
+    "question_id": 77,
+    "question": "Can a woman claim maintenance from her husband?",
+    "answer": "Yes, under Section 125 of the Criminal Procedure Code, a woman can claim maintenance for herself and children.",
+    "category": "Women Law",
+    "keywords": ["maintenance", "women", "husband"]
+  },
+  {
+    "question_id": 78,
+    "question": "How do I report stalking or harassment online?",
+    "answer": "You can file a complaint with the Cyber Crime Cell or local police with evidence of the harassment.",
+    "category": "Women Law",
+    "keywords": ["stalking", "harassment", "cyber crime"]
+  },
+  {
+    "question_id": 79,
+    "question": "Can women access legal aid for free?",
+    "answer": "Yes, women can avail free legal aid services provided by government legal aid centers or NGOs.",
+    "category": "Women Law",
+    "keywords": ["legal aid", "women", "free"]
+  },
+  {
+    "question_id": 80,
+    "question": "What rights do women have regarding inheritance?",
+    "answer": "Women have equal rights to inherit property as per Hindu Succession Act and other personal laws applicable.",
+    "category": "Women Law",
+    "keywords": ["inheritance", "women", "property"]
+  }
+
+
+]

@@ -1,0 +1,42 @@
+{
+  "rightId": "SENIOR_SUPPORT_001",
+  "title": "Right to Maintenance by Children",
+  "category": "SENIOR_CITIZEN_RIGHTS",
+  "slug": "maintenance-by-children",
+
+  "summary": "Senior citizens have the legal right to be supported by their children.",
+
+  "plainExplanation": {
+    "whatItMeans": "Children must provide financial support to elderly parents.",
+    "whyItMatters": "Ensures dignity and financial security for seniors."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Maintenance and Welfare of Parents and Senior Citizens Act",
+        "section": "Section 4"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Children refusing financial support",
+    "Abandonment of elderly parents",
+    "Neglect of care"
+  ],
+
+  "exampleScenario": {
+    "situation": "Children refuse to provide basic support to elderly parents.",
+    "isViolation": true,
+    "explanation": "Parents can approach maintenance tribunal."
+  },
+
+  "stepByStepAction": [
+    "File complaint with tribunal",
+    "Provide proof of neglect",
+    "Seek maintenance order"
+  ],
+
+  "severity": "HIGH"
+}
