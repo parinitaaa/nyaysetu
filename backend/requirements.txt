@@ -15,3 +15,11 @@ transformers
 sentencepiece
 PyPDF2
 python-multipart
+
+pandas
+
+requests
+beautifulsoup4 
+lxml
+python-dotenv
+fake-useragent
