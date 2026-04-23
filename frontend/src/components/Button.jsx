@@ -10,27 +10,27 @@ export default function Button({
   fullWidth = false,
   ...props
 }) {
-  const baseClasses = "px-6 py-3.5 rounded-xl font-medium transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed min-h-[44px] touch-manipulation";
+  const baseClasses = "relative px-8 py-4 rounded-2xl font-black transition-all duration-500 disabled:opacity-50 disabled:cursor-not-allowed overflow-hidden active:scale-95";
   
   const variants = {
-    primary: "bg-indigo-600 text-white hover:bg-indigo-700 hover:shadow-glow hover:scale-105 shadow-xl active:scale-95",
-    secondary: "border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white hover:shadow-lg",
-    ghost: "text-indigo-600 hover:bg-indigo-50",
+    primary: "bg-indigo-600 text-white shadow-[0_0_20px_rgba(79,70,229,0.4)] hover:shadow-[0_0_30px_rgba(79,70,229,0.6)] hover:bg-indigo-500",
+    secondary: "bg-white/5 border border-white/10 text-white hover:bg-white/10 hover:border-white/20 backdrop-blur-md",
+    ghost: "text-indigo-400 hover:text-white transition-colors",
   };
 
   const widthClass = fullWidth ? "w-full" : "";
 
   return (
     <motion.button
-      whileHover={disabled ? {} : { scale: 1.02 }}
-      whileTap={disabled ? {} : { scale: 0.98 }}
+      whileHover={disabled ? {} : { y: -2 }}
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`${baseClasses} ${variants[variant]} ${widthClass} ${className}`}
+      className={`${baseClasses} ${variants[variant]} ${widthClass} ${className} group`}
       {...props}
     >
-      {children}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+      <span className="relative z-10">{children}</span>
     </motion.button>
   );
 }

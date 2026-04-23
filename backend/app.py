@@ -64,13 +64,13 @@ def create_app() -> FastAPI:
 
         await init_db()
 
-        print("✅ Loading ML models...")
+        print("[OK] Loading ML models...")
 
         app.state.model = joblib.load("models/case_outcome_model.pkl")
         app.state.vectorizer = joblib.load("models/tfidf_vectorizer.pkl")
         app.state.df_cases = pd.read_csv("models/cases_data.csv")
 
-        print("✅ ML models loaded")
+        print("[OK] ML models loaded")
 
     # =========================
     df_cases = pd.read_csv("models/cases_data.csv")

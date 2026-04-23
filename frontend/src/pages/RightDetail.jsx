@@ -4,18 +4,20 @@ import { getSingleRight } from "../api/rightsApi";
 import PageWrapper from "../components/PageWrapper";
 import Card from "../components/Card";
 import Button from "../components/Button";
-import { motion } from "framer-motion";
-import { FaArrowLeft, FaExclamationTriangle, FaPhone, FaCheckCircle } from "react-icons/fa";
+import Skeleton from "../components/Skeleton";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaArrowLeft, FaExclamationTriangle, FaPhone, FaCheckCircle, FaChevronRight, FaInfoCircle } from "react-icons/fa";
 
-function Section({ title, children }) {
+function Section({ title, icon: Icon, children }) {
   if (!children) return null;
 
   return (
-    <Card shadow="xl" className="p-5 md:p-6 space-y-3 md:space-y-4">
-      <h2 className="text-lg md:text-xl font-semibold text-gray-900 flex items-center gap-2 border-b border-gray-200 pb-2 md:pb-3">
+    <Card className="p-8 space-y-6">
+      <h2 className="text-sm font-black text-indigo-400 uppercase tracking-[0.2em] flex items-center gap-3">
+        {Icon && <Icon size={18} className="opacity-50" />}
         {title}
       </h2>
-      <div className="text-gray-700 leading-relaxed text-sm md:text-base">{children}</div>
+      <div className="text-gray-400 leading-relaxed font-medium text-base md:text-lg">{children}</div>
     </Card>
   );
 }
@@ -37,22 +39,26 @@ function RightDetail() {
     return category_slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
   };
 
+  const getSeverityBadge = (severity) => {
+    if (!severity) return null;
+    const lower = severity.toLowerCase();
+    const color = (lower.includes("high") || lower.includes("critical")) ? 'red' :
+      lower.includes("medium") ? 'orange' : 'green';
+
+    return (
+      <span className={`px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest bg-${color}-500/20 text-${color}-400 border border-${color}-500/30 shadow-[0_0_15px_rgba(0,0,0,0.1)]`}>
+        {severity}
+      </span>
+    );
+  };
+
   if (loading) {
     return (
       <PageWrapper>
-        <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-blue-50 pt-20 md:pt-24 pb-16 md:pb-20">
-          <div className="max-w-4xl mx-auto px-4 md:px-6 lg:px-12 space-y-6">
-            <div className="h-6 w-48 bg-white/60 rounded-full animate-pulse" />
-            <div className="h-10 w-3/4 bg-white/70 rounded-full animate-pulse" />
-            <div className="space-y-4 mt-4">
-              {[1, 2].map((i) => (
-                <div
-                  key={i}
-                  className="h-24 md:h-28 bg-white/60 rounded-2xl border border-gray-100 animate-pulse"
-                />
-              ))}
-            </div>
-          </div>
+        <div className="min-h-screen pt-32 pb-20 px-4 md:px-8 max-w-4xl mx-auto space-y-8">
+          <Skeleton className="h-48 w-full rounded-[2.5rem]" />
+          <Skeleton className="h-64 w-full rounded-[2.5rem]" />
+          <Skeleton className="h-40 w-full rounded-[2.5rem]" />
         </div>
       </PageWrapper>
     );
@@ -61,140 +67,106 @@ function RightDetail() {
   if (!right) {
     return (
       <PageWrapper>
-        <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-blue-50 pt-20 md:pt-24 pb-16 md:pb-20">
-          <div className="max-w-4xl mx-auto px-4 md:px-6 lg:px-12">
-            <p className="text-gray-600 text-sm md:text-base">Right not found.</p>
-          </div>
+        <div className="min-h-screen pt-32 pb-20 px-4 md:px-8 max-w-4xl mx-auto flex flex-col items-center justify-center text-center">
+          <FaExclamationTriangle className="text-red-500 mb-6" size={64} />
+          <h1 className="text-3xl font-black text-white">Right Not Found</h1>
+          <p className="text-gray-500 mt-2 mb-8">The legal right you are looking for does not exist in our database.</p>
+          <Link to="/rights">
+            <Button>Back to Knowledge Base</Button>
+          </Link>
         </div>
       </PageWrapper>
     );
   }
 
-  const getSeverityColor = (severity) => {
-    if (!severity) return "bg-indigo-100 text-indigo-800";
-    const lower = severity.toLowerCase();
-    if (lower.includes("high") || lower.includes("critical")) {
-      return "bg-red-100 text-red-800";
-    }
-    if (lower.includes("medium")) {
-      return "bg-yellow-100 text-yellow-800";
-    }
-    return "bg-green-100 text-green-800";
-  };
-
   return (
     <PageWrapper>
-      <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-blue-50 pt-20 md:pt-24 pb-16 md:pb-20">
-        <div className="max-w-4xl mx-auto px-4 md:px-6 lg:px-12 space-y-5 md:space-y-6">
-          {/* Breadcrumb */}
-          <motion.nav
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="text-xs md:text-sm text-gray-500 flex flex-wrap items-center gap-1"
-          >
-            <Link to="/" className="hover:text-indigo-600">
-              Home
-            </Link>
-            <span>/</span>
-            <Link to="/rights" className="hover:text-indigo-600">
-              Rights
-            </Link>
-            <span>/</span>
-            <Link
-              to={`/rights/${category_slug}`}
-              className="hover:text-indigo-600"
-            >
-              {formatCategoryName()}
-            </Link>
-            <span>/</span>
-            <span className="text-gray-700 truncate max-w-[150px] md:max-w-none">{right.title}</span>
-          </motion.nav>
+      <div className="min-h-screen pt-32 pb-20 px-4 md:px-8 max-w-4xl mx-auto space-y-8">
+        {/* Breadcrumb */}
+        <motion.nav
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          className="flex items-center space-x-3 text-[10px] font-black uppercase tracking-widest text-gray-500"
+        >
+          <Link to="/" className="hover:text-indigo-400 transition-colors">Home</Link>
+          <FaChevronRight className="text-[8px]" />
+          <Link to="/rights" className="hover:text-indigo-400 transition-colors">Rights</Link>
+          <FaChevronRight className="text-[8px]" />
+          <Link to={`/rights/${category_slug}`} className="hover:text-indigo-400 transition-colors">{formatCategoryName()}</Link>
+          <FaChevronRight className="text-[8px]" />
+          <span className="text-indigo-400 truncate max-w-[150px]">{right.title}</span>
+        </motion.nav>
 
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-          >
-            <Link to={`/rights/${category_slug}`}>
-              <Button variant="ghost" className="flex items-center gap-2 mt-2">
-                <FaArrowLeft />
-                Back to Category
-              </Button>
-            </Link>
-          </motion.div>
+        {/* Title Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
+          <Card className="relative overflow-hidden p-8 md:p-12 border-indigo-500/20">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/5 rounded-full blur-3xl" />
 
-          {/* Title Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-          >
-            <Card shadow="2xl" className="p-6 md:p-8 space-y-3 md:space-y-4 rounded-2xl border border-gray-100">
-              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 md:gap-4">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 flex-1">
-                  {right.title}
-                </h1>
-                {right.severity && (
-                  <span
-                    className={`px-4 md:px-5 py-2 rounded-full text-xs md:text-sm font-medium shadow-md self-start ${getSeverityColor(
-                      right.severity
-                    )}`}
-                  >
-                    {right.severity}
-                  </span>
-                )}
+            <div className="space-y-6">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div className="text-[10px] font-black text-indigo-500 uppercase tracking-[0.3em]">Fundamental Legal Right</div>
+                {getSeverityBadge(right.severity)}
               </div>
+
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-none">
+                {right.title}
+              </h1>
+
               {right.summary && (
-                <p className="text-base md:text-lg text-gray-600 leading-relaxed border-t border-gray-200 pt-3 md:pt-4">
+                <p className="text-xl md:text-2xl text-gray-400 font-medium leading-relaxed border-t border-white/5 pt-8">
                   {right.summary}
                 </p>
               )}
-            </Card>
-          </motion.div>
+            </div>
+          </Card>
+        </motion.div>
 
+        {/* Action Buttons */}
+        <div className="flex flex-wrap gap-4">
+          <Link to={`/rights/${category_slug}`}>
+            <Button variant="secondary" className="group">
+              <FaArrowLeft className="inline mr-2 group-hover:-translate-x-1 transition-transform" />
+              BACK TO {formatCategoryName().toUpperCase()}
+            </Button>
+          </Link>
+        </div>
+
+        {/* Main Content Grid */}
+        <div className="grid grid-cols-1 gap-8">
           {/* Plain Explanation */}
           {right.plainExplanation && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-            >
-              <Section title="Plain Explanation">
-                {right.plainExplanation.whatItMeans && (
-                  <div className="space-y-3">
-                    <div>
-                      <h3 className="font-semibold text-gray-900 mb-2 text-sm md:text-base">
-                        What It Means
-                      </h3>
-                      <p className="text-gray-700 text-sm md:text-base">{right.plainExplanation.whatItMeans}</p>
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
+              <Section title="Analysis & Significance" icon={FaInfoCircle}>
+                <div className="space-y-8">
+                  {right.plainExplanation.whatItMeans && (
+                    <div className="space-y-2">
+                      <h3 className="text-xs font-black text-gray-500 uppercase tracking-widest">Scope & Meaning</h3>
+                      <p className="text-gray-300">{right.plainExplanation.whatItMeans}</p>
                     </div>
-                    {right.plainExplanation.whyItMatters && (
-                      <div>
-                        <h3 className="font-semibold text-gray-900 mb-2 text-sm md:text-base">
-                          Why It Matters
-                        </h3>
-                        <p className="text-gray-700 text-sm md:text-base">
-                          {right.plainExplanation.whyItMatters}
-                        </p>
-                      </div>
-                    )}
-                  </div>
-                )}
+                  )}
+                  {right.plainExplanation.whyItMatters && (
+                    <div className="space-y-2">
+                      <h3 className="text-xs font-black text-gray-500 uppercase tracking-widest">Why it matters to you</h3>
+                      <p className="text-gray-300 italic">"{right.plainExplanation.whyItMatters}"</p>
+                    </div>
+                  )}
+                </div>
               </Section>
             </motion.div>
           )}
 
           {/* Who Can Use */}
           {right.whoCanUseThisRight && right.whoCanUseThisRight.length > 0 && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-            >
-              <Section title="Who Can Use This Right">
-                <ul className="space-y-2">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+              <Section title="Eligible Citizens" icon={FaCheckCircle}>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {right.whoCanUseThisRight.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <FaCheckCircle className="text-indigo-600 mt-1 flex-shrink-0" />
-                      <span className="text-sm md:text-base">{item}</span>
+                    <li key={i} className="flex items-start gap-3 p-4 bg-white/5 rounded-2xl border border-white/5 group hover:border-indigo-500/30 transition-all">
+                      <FaCheckCircle className="text-indigo-500 mt-1 flex-shrink-0" />
+                      <span className="text-gray-300 font-medium">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -203,39 +175,16 @@ function RightDetail() {
           )}
 
           {/* Violations */}
-          {right.whatConstitutesViolation &&
-            right.whatConstitutesViolation.length > 0 && (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-              >
-                <Section title="What Constitutes Violation">
-                  <ul className="space-y-2">
-                    {right.whatConstitutesViolation.map((item, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <FaExclamationTriangle className="text-red-500 mt-1 flex-shrink-0" />
-                        <span className="text-sm md:text-base">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </Section>
-              </motion.div>
-            )}
-
-          {/* Reliefs */}
-          {right.reliefsAvailable && right.reliefsAvailable.length > 0 && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-            >
-              <Section title="Reliefs Available">
-                <ul className="space-y-2">
-                  {right.reliefsAvailable.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
-                      <span className="text-sm md:text-base">{item}</span>
+          {right.whatConstitutesViolation && right.whatConstitutesViolation.length > 0 && (
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
+              <Section title="Signs of Violation" icon={FaExclamationTriangle}>
+                <ul className="space-y-4">
+                  {right.whatConstitutesViolation.map((item, i) => (
+                    <li key={i} className="flex items-start gap-4 p-5 bg-red-500/5 rounded-2xl border border-red-500/10 group hover:border-red-500/30 transition-all">
+                      <div className="w-8 h-8 bg-red-500/20 text-red-400 rounded-full flex items-center justify-center flex-shrink-0">
+                        <FaExclamationTriangle size={14} />
+                      </div>
+                      <span className="text-gray-300 font-medium pt-1">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -243,75 +192,45 @@ function RightDetail() {
             </motion.div>
           )}
 
-          {/* Steps */}
+          {/* Step-by-Step Action */}
           {right.stepByStepAction && right.stepByStepAction.length > 0 && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-            >
-              <Section title="Step-by-Step Action Plan">
-                <ol className="space-y-3 md:space-y-4">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>
+              <Section title="Action Plan & Recourse" icon={FaChevronRight}>
+                <div className="space-y-6 relative">
+                  <div className="absolute left-6 top-8 bottom-8 w-0.5 bg-indigo-500/10" />
                   {right.stepByStepAction.map((step, i) => (
-                    <li key={i} className="flex items-start gap-3 md:gap-4 border-l-2 border-indigo-200 pl-3 md:pl-4">
-                      <span className="flex-shrink-0 w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-indigo-600 to-purple-600 text-white rounded-full flex items-center justify-center font-semibold shadow-lg text-sm md:text-base">
+                    <div key={i} className="flex items-start gap-6 group relative z-10">
+                      <div className="flex-shrink-0 w-12 h-12 bg-[#0a0f1e] border-2 border-indigo-500 text-white rounded-full flex items-center justify-center font-black shadow-[0_0_20px_rgba(79,70,229,0.2)] group-hover:bg-indigo-600 transition-all">
                         {i + 1}
-                      </span>
-                      <span className="pt-1 md:pt-2 text-sm md:text-base">{step}</span>
-                    </li>
+                      </div>
+                      <div className="pt-3 pb-8 flex-1 border-b border-white/5 group-last:border-0">
+                        <p className="text-gray-300 font-bold text-lg leading-relaxed">{step}</p>
+                      </div>
+                    </div>
                   ))}
-                </ol>
-              </Section>
-            </motion.div>
-          )}
-
-          {/* Related Rights */}
-          {right.relatedRights && right.relatedRights.length > 0 && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.55 }}
-            >
-              <Section title="Related Rights">
-                <ul className="space-y-2">
-                  {right.relatedRights.map((item, i) => (
-                    <li key={i} className="text-gray-700 text-sm md:text-base">
-                      {typeof item === "string" ? item : item.title || ""}
-                    </li>
-                  ))}
-                </ul>
+                </div>
               </Section>
             </motion.div>
           )}
 
           {/* Emergency Contacts */}
           {right.emergencyContacts && right.emergencyContacts.length > 0 && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-            >
-              <Card shadow="xl" className="p-5 md:p-6 bg-red-50 border-2 border-red-200">
-                <h2 className="text-lg md:text-xl font-semibold text-gray-900 flex items-center gap-2 mb-3 md:mb-4">
-                  <FaPhone className="text-red-600" />
-                  Emergency Contacts
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}>
+              <Card className="p-8 bg-red-500/10 border-red-500/20 shadow-[0_0_50px_rgba(239,68,68,0.1)]">
+                <h2 className="text-sm font-black text-red-400 uppercase tracking-[0.2em] flex items-center gap-3 mb-8">
+                  <FaPhone size={18} />
+                  Emergency & Legal Support
                 </h2>
-                <div className="space-y-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {right.emergencyContacts.map((contact, i) => (
-                    <div
+                    <a
                       key={i}
-                      className="bg-white p-3 md:p-4 rounded-xl border-2 border-red-200 shadow-md"
+                      href={`tel:${contact.number}`}
+                      className="bg-black/40 p-6 rounded-2xl border border-red-500/20 hover:border-red-500/50 hover:bg-red-500/10 transition-all flex flex-col items-center text-center group"
                     >
-                      <strong className="text-gray-900 block mb-1 text-sm md:text-base">
-                        {contact.service}
-                      </strong>
-                      <a
-                        href={`tel:${contact.number}`}
-                        className="text-indigo-600 hover:underline font-medium text-sm md:text-base"
-                      >
-                        {contact.number}
-                      </a>
-                    </div>
+                      <div className="text-[10px] font-black text-red-400 uppercase tracking-widest mb-2 opacity-50 group-hover:opacity-100">{contact.service}</div>
+                      <div className="text-2xl font-black text-white group-hover:scale-105 transition-transform">{contact.number}</div>
+                    </a>
                   ))}
                 </div>
               </Card>
@@ -324,3 +243,4 @@ function RightDetail() {
 }
 
 export default RightDetail;
+

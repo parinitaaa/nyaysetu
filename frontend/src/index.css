@@ -1,55 +1,113 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Custom Scrollbar for Dark Theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
+::-webkit-scrollbar-track {
+  background: #0a0f1e;
+}
 
-  body {
-    @apply antialiased;
-  }
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.2);
+  border-radius: 10px;
+}
 
-  /* Custom Scrollbar */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.5);
+}
 
-  ::-webkit-scrollbar-track {
-    @apply bg-gray-100;
-  }
+/* Smooth selection color */
+::selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: #818cf8;
+}
 
-  ::-webkit-scrollbar-thumb {
-    @apply bg-gray-300 rounded-full;
-  }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-gray-400;
-  }
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
-  /* Firefox Scrollbar */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: rgb(209 213 219) rgb(243 244 246);
+/* Skeleton Pulse Animation */
+@keyframes pulse-bg {
+  0%, 100% { background-color: rgba(255, 255, 255, 0.03); }
+  50% { background-color: rgba(255, 255, 255, 0.08); }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-skeleton {
+  animation: pulse-bg 2s ease-in-out infinite;
+  border-radius: 0.5rem;
+}
+
+.animate-gradient {
+  animation: gradient 8s ease infinite;
+}
+
+/* Stagger Animation Base */
+.stagger-in > * {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInDown 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.stagger-in > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-in > *:nth-child(2) { animation-delay: 0.15s; }
+.stagger-in > *:nth-child(3) { animation-delay: 0.2s; }
+.stagger-in > *:nth-child(4) { animation-delay: 0.25s; }
+.stagger-in > *:nth-child(5) { animation-delay: 0.3s; }
 
-  /* Consistent Spacing System */
-  .spacing-section {
-    @apply py-12 md:py-16 lg:py-20;
-  }
-
-  .spacing-container {
-    @apply px-6 md:px-12;
-  }
-
-  .spacing-content {
-    @apply max-w-6xl mx-auto;
-  }
+/* Global Page Transitions */
+.page-enter {
+  opacity: 0;
 }
+.page-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.page-exit {
+  opacity: 1;
+}
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+/* Glassmorphism focus */
+.glass-focus:focus-within {
+  border-color: rgba(99, 102, 241, 0.5);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.1);
+}
+
+/* Custom Utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0a0f1e;
+}
+
