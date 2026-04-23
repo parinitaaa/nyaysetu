@@ -1,0 +1,36 @@
+{
+  "rightId": "EMPLOY_WAGE_001",
+  "title": "Right to Minimum Wages",
+  "category": "EMPLOYMENT_RIGHTS",
+  "slug": "minimum-wage",
+
+  "summary": "Employees are entitled to receive wages not less than the legally fixed minimum wage.",
+
+  "plainExplanation": {
+    "whatItMeans": "Employers cannot pay below government-notified rates.",
+    "whyItMatters": "Ensures basic living standards."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Minimum Wages Act",
+        "section": "1948"
+      }
+    ]
+  },
+
+  "exampleScenario": {
+    "situation": "A worker is paid less than notified minimum wage.",
+    "isViolation": true,
+    "explanation": "Underpayment violates labour law."
+  },
+
+  "stepByStepAction": [
+    "Collect wage proof",
+    "Approach labour office",
+    "File formal complaint"
+  ],
+
+  "severity": "HIGH"
+}

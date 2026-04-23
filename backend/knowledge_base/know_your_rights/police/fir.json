@@ -1,0 +1,94 @@
+{
+  "rightId": "POLICE_FIR_001",
+  "title": "Right to File an FIR",
+  "category": "POLICE_RIGHTS",
+  "slug": "fir",
+
+  "summary": "Every person has the legal right to register a First Information Report (FIR) for a cognizable offence at any police station.",
+
+  "plainExplanation": {
+    "whatItMeans": "If a serious crime has happened, the police must write down your complaint and start the legal process.",
+    "whyItMatters": "Without an FIR, police investigation usually cannot legally begin."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Code of Criminal Procedure",
+        "section": "Section 154"
+      }
+    ]
+  },
+
+  "whoCanUseThisRight": [
+    "Victims",
+    "Witnesses",
+    "Any person with knowledge of a cognizable offence"
+  ],
+
+  "whenItApplies": [
+    "The offence is cognizable (e.g., theft, assault, rape)",
+    "Information relates to a criminal act"
+  ],
+
+  "whenItDoesNotApply": [
+    "Purely civil disputes",
+    "Non-cognizable offences without court approval"
+  ],
+
+  "whatPoliceMustDo": [
+    "Register the FIR immediately",
+    "Record information accurately",
+    "Provide a free copy of the FIR"
+  ],
+
+  "whatPoliceCannotDo": [
+    "Refuse FIR due to jurisdiction",
+    "Ask for money",
+    "Delay registration unnecessarily"
+  ],
+
+  "commonViolations": [
+    "Police refuse to file FIR",
+    "Police ask victim to come later",
+    "Facts are incorrectly recorded"
+  ],
+
+  "exampleScenario": {
+    "situation": "A person reports a theft but police say it is not serious enough.",
+    "isViolation": true,
+    "explanation": "Theft is a cognizable offence and FIR must be registered."
+  },
+
+  "stepByStepAction": [
+    "Go to the nearest police station",
+    "Clearly explain the incident",
+    "Ask for the FIR number and copy",
+    "Note the name of the officer"
+  ],
+
+  "ifDenied": {
+    "actions": [
+      "Send written complaint to Superintendent of Police",
+      "Approach Judicial Magistrate",
+      "Use online FIR system (if available)"
+    ]
+  },
+
+  "evidenceChecklist": [
+    "Written complaint copy",
+    "Witness details",
+    "Medical report (if applicable)"
+  ],
+
+  "emergencyContact": "112",
+
+  "mythsVsFacts": [
+    {
+      "myth": "Police can refuse FIR if the crime happened elsewhere",
+      "fact": "Zero FIR can be registered at any police station"
+    }
+  ],
+
+  "severity": "CRITICAL"
+}

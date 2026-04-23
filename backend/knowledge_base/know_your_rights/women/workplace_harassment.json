@@ -1,0 +1,61 @@
+{
+  "rightId": "WOMEN_POSH_002",
+  "title": "Right Against Workplace Sexual Harassment",
+  "category": "WOMEN_RIGHTS",
+  "slug": "workplace-harassment",
+
+  "summary": "Women have the right to a safe working environment free from sexual harassment.",
+
+  "plainExplanation": {
+    "whatItMeans": "Any unwelcome sexual behavior at the workplace is illegal.",
+    "whyItMatters": "Every workplace must have a complaint mechanism."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act",
+        "section": "2013 (POSH Act)"
+      }
+    ]
+  },
+
+  "whoCanUseThisRight": [
+    "Employees",
+    "Interns",
+    "Contract workers",
+    "Domestic workers"
+  ],
+
+  "whatCountsAsHarassment": [
+    "Unwelcome physical contact",
+    "Sexual remarks",
+    "Showing pornography",
+    "Demand for sexual favors"
+  ],
+
+  "employerObligations": [
+    "Form Internal Complaints Committee (ICC)",
+    "Conduct fair inquiry",
+    "Ensure confidentiality"
+  ],
+
+  "complaintTimeline": {
+    "normal": "Within 3 months of incident",
+    "extension": "Additional 3 months if justified"
+  },
+
+  "exampleScenario": {
+    "situation": "A manager sends repeated inappropriate messages to an intern.",
+    "isViolation": true,
+    "explanation": "Digital harassment is covered under POSH."
+  },
+
+  "stepByStepAction": [
+    "File written complaint to ICC",
+    "Cooperate in inquiry",
+    "Seek interim relief if needed"
+  ],
+
+  "severity": "HIGH"
+}

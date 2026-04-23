@@ -1,0 +1,38 @@
+{
+  "rightId": "STUDENT_EXAM_002",
+  "title": "Rights Related to Examinations and Evaluation",
+  "category": "STUDENT_RIGHTS",
+  "slug": "exam-rights",
+
+  "summary": "Students have the right to fair, transparent, and unbiased evaluation.",
+
+  "plainExplanation": {
+    "whatItMeans": "Marks cannot be awarded arbitrarily.",
+    "whyItMatters": "Academic evaluation impacts future opportunities."
+  },
+
+  "whoCanUseThisRight": [
+    "University students",
+    "College students"
+  ],
+
+  "studentRights": [
+    "Right to revaluation",
+    "Right to answer script access",
+    "Right to grievance redressal"
+  ],
+
+  "exampleScenario": {
+    "situation": "A student is denied revaluation despite rules allowing it.",
+    "isViolation": true,
+    "explanation": "Denial violates academic regulations."
+  },
+
+  "stepByStepAction": [
+    "Apply for revaluation",
+    "File grievance with university",
+    "Escalate to regulatory body if needed"
+  ],
+
+  "severity": "MEDIUM"
+}

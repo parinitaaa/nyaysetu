@@ -1,0 +1,42 @@
+{
+  "rightId": "PROPERTY_ENCROACHMENT_002",
+  "title": "Protection Against Land Encroachment",
+  "category": "PROPERTY_RIGHTS",
+  "slug": "land-encroachment",
+
+  "summary": "Property owners are protected against unauthorized occupation of land.",
+
+  "plainExplanation": {
+    "whatItMeans": "No one can illegally occupy your land.",
+    "whyItMatters": "Protects property ownership rights."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Indian Penal Code",
+        "section": "Criminal Trespass"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Unauthorized construction",
+    "Illegal occupation",
+    "Boundary violations"
+  ],
+
+  "exampleScenario": {
+    "situation": "Neighbor builds structure on another person's land.",
+    "isViolation": true,
+    "explanation": "Owner can seek legal remedy."
+  },
+
+  "stepByStepAction": [
+    "Document property boundaries",
+    "File complaint with local authorities",
+    "Initiate legal proceedings"
+  ],
+
+  "severity": "HIGH"
+}

@@ -1,0 +1,42 @@
+{
+  "rightId": "BANKING_CHARGES_002",
+  "title": "Right to Transparent Banking Charges",
+  "category": "BANKING_RIGHTS",
+  "slug": "transparent-banking-charges",
+
+  "summary": "Banks must clearly disclose service charges and fees to customers.",
+
+  "plainExplanation": {
+    "whatItMeans": "Banks cannot secretly deduct charges from your account.",
+    "whyItMatters": "Ensures financial transparency and trust."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "RBI Banking Transparency Guidelines",
+        "section": "Service Charge Disclosure"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Hidden charges",
+    "Unexplained deductions",
+    "Charges not mentioned in bank policy"
+  ],
+
+  "exampleScenario": {
+    "situation": "A bank deducts maintenance charges not disclosed earlier.",
+    "isViolation": true,
+    "explanation": "Customer can dispute unexplained charges."
+  },
+
+  "stepByStepAction": [
+    "Check bank statement",
+    "Request clarification from bank",
+    "File complaint if charges are unfair"
+  ],
+
+  "severity": "MEDIUM"
+}

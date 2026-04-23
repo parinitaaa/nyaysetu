@@ -1,0 +1,27 @@
+{
+  "rightId": "CONSUMER_FRAUD_003",
+  "title": "Right Against Online Consumer Fraud",
+  "category": "CONSUMER_RIGHTS",
+  "slug": "online-fraud",
+
+  "summary": "Consumers are protected against fraud in online shopping and digital transactions.",
+
+  "plainExplanation": {
+    "whatItMeans": "Fake sellers, non-delivery, and payment frauds are punishable.",
+    "whyItMatters": "Builds trust in digital commerce."
+  },
+
+  "exampleScenario": {
+    "situation": "Payment made for a product but seller disappears.",
+    "isViolation": true,
+    "explanation": "This is online consumer fraud."
+  },
+
+  "stepByStepAction": [
+    "Contact platform support",
+    "Report to cyber crime portal",
+    "File consumer complaint"
+  ],
+
+  "severity": "HIGH"
+}

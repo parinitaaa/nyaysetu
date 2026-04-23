@@ -1,0 +1,36 @@
+{
+  "rightId": "EMPLOY_SAFE_003",
+  "title": "Right to Workplace Safety",
+  "category": "EMPLOYMENT_RIGHTS",
+  "slug": "workplace-safety",
+
+  "summary": "Employers must ensure a safe and healthy working environment.",
+
+  "plainExplanation": {
+    "whatItMeans": "Unsafe working conditions are not acceptable.",
+    "whyItMatters": "Prevents injury and occupational hazards."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Factories Act",
+        "section": "1948"
+      }
+    ]
+  },
+
+  "exampleScenario": {
+    "situation": "Workers are forced to operate machinery without safety gear.",
+    "isViolation": true,
+    "explanation": "This violates workplace safety norms."
+  },
+
+  "stepByStepAction": [
+    "Report unsafe conditions",
+    "Approach safety officer",
+    "File complaint with labour department"
+  ],
+
+  "severity": "CRITICAL"
+}

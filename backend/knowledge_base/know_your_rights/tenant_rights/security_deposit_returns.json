@@ -1,0 +1,42 @@
+{
+  "rightId": "TENANT_DEPOSIT_001",
+  "title": "Right to Return of Security Deposit",
+  "category": "TENANT_RIGHTS",
+  "slug": "security-deposit-return",
+
+  "summary": "Tenants have the right to receive their security deposit after vacating the property if no damage is caused.",
+
+  "plainExplanation": {
+    "whatItMeans": "Landlords cannot unfairly keep your deposit once the tenancy ends.",
+    "whyItMatters": "Prevents landlords from exploiting tenants financially."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Model Tenancy Act",
+        "section": "Security Deposit Regulations"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Landlord refuses to return deposit without valid reason",
+    "Deposit withheld despite no damage",
+    "Unreasonable deductions"
+  ],
+
+  "exampleScenario": {
+    "situation": "Tenant vacates house but landlord refuses to return deposit.",
+    "isViolation": true,
+    "explanation": "Tenant can demand refund or take legal action."
+  },
+
+  "stepByStepAction": [
+    "Request deposit return in writing",
+    "Document property condition",
+    "File complaint with rent authority"
+  ],
+
+  "severity": "MEDIUM"
+}

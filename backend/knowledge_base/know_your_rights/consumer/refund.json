@@ -1,0 +1,53 @@
+{
+  "rightId": "CONSUMER_REFUND_001",
+  "title": "Right to Refund or Replacement",
+  "category": "CONSUMER_RIGHTS",
+  "slug": "refund",
+
+  "summary": "Consumers have the right to seek refund, replacement, or repair for defective goods or deficient services.",
+
+  "plainExplanation": {
+    "whatItMeans": "If a product or service does not meet promised standards, you can demand corrective action.",
+    "whyItMatters": "This protects consumers from unfair business practices."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Consumer Protection Act",
+        "section": "2019"
+      }
+    ]
+  },
+
+  "consumerRights": [
+    "Right to refund",
+    "Right to replacement",
+    "Right to compensation"
+  ],
+
+  "whenItApplies": [
+    "Product is defective",
+    "Service is deficient",
+    "False promises or misrepresentation"
+  ],
+
+  "exampleScenario": {
+    "situation": "An online order arrives damaged and seller refuses refund.",
+    "isViolation": true,
+    "explanation": "Consumer can demand refund under law."
+  },
+
+  "stepByStepAction": [
+    "Contact seller or service provider",
+    "Raise written complaint",
+    "Approach consumer forum if unresolved"
+  ],
+
+  "complaintChannels": [
+    "Consumer Helpline",
+    "District Consumer Commission"
+  ],
+
+  "severity": "MEDIUM"
+}

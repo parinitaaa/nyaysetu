@@ -1,0 +1,42 @@
+{
+  "rightId": "PROPERTY_RECORDS_003",
+  "title": "Right to Verify Property Records",
+  "category": "PROPERTY_RIGHTS",
+  "slug": "verify-property-records",
+
+  "summary": "Citizens have the right to verify government property records before purchasing land.",
+
+  "plainExplanation": {
+    "whatItMeans": "You can check official land records before buying property.",
+    "whyItMatters": "Helps prevent property fraud."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Land Revenue Act",
+        "section": "Public Land Records"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Fake property records",
+    "Unregistered land transactions",
+    "Duplicate ownership claims"
+  ],
+
+  "exampleScenario": {
+    "situation": "Buyer discovers seller does not legally own the land.",
+    "isViolation": true,
+    "explanation": "Buyer can cancel transaction."
+  },
+
+  "stepByStepAction": [
+    "Check government land portal",
+    "Verify ownership documents",
+    "Consult legal authority if issues arise"
+  ],
+
+  "severity": "MEDIUM"
+}

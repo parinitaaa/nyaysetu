@@ -1,0 +1,42 @@
+{
+  "rightId": "PROPERTY_DOCUMENT_001",
+  "title": "Right to Property Ownership Documents",
+  "category": "PROPERTY_RIGHTS",
+  "slug": "property-documents",
+
+  "summary": "Property buyers have the right to obtain legal ownership documents.",
+
+  "plainExplanation": {
+    "whatItMeans": "Property owners must receive official documents proving ownership.",
+    "whyItMatters": "Prevents property fraud."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Registration Act",
+        "section": "Property Registration"
+      }
+    ]
+  },
+
+  "whatCountsAsDefect": [
+    "Property not registered",
+    "Fake ownership documents",
+    "Missing title deed"
+  ],
+
+  "exampleScenario": {
+    "situation": "Buyer pays for property but seller refuses to transfer documents.",
+    "isViolation": true,
+    "explanation": "Buyer can take legal action."
+  },
+
+  "stepByStepAction": [
+    "Verify property records",
+    "Demand ownership transfer",
+    "File property dispute case"
+  ],
+
+  "severity": "HIGH"
+}

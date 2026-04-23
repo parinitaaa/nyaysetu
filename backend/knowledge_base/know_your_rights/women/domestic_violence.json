@@ -1,0 +1,76 @@
+{
+  "rightId": "WOMEN_DV_001",
+  "title": "Right Against Domestic Violence",
+  "category": "WOMEN_RIGHTS",
+  "slug": "domestic-violence",
+
+  "summary": "Women have the right to protection against physical, emotional, sexual, verbal, and economic abuse within a domestic relationship.",
+
+  "plainExplanation": {
+    "whatItMeans": "Domestic violence is not limited to physical harm. Mental harassment, financial control, and threats are also illegal.",
+    "whyItMatters": "The law provides immediate protection, residence rights, and financial relief."
+  },
+
+  "legalBasis": {
+    "acts": [
+      {
+        "name": "Protection of Women from Domestic Violence Act",
+        "section": "2005 (Entire Act)"
+      }
+    ]
+  },
+
+  "whoCanUseThisRight": [
+    "Married women",
+    "Live-in partners",
+    "Women in shared households"
+  ],
+
+  "typesOfAbuseCovered": [
+    "Physical abuse",
+    "Emotional abuse",
+    "Sexual abuse",
+    "Verbal abuse",
+    "Economic abuse"
+  ],
+
+  "whatConstitutesViolation": [
+    "Beating or physical harm",
+    "Threats or intimidation",
+    "Controlling access to money",
+    "Forcing isolation"
+  ],
+
+  "reliefsAvailable": [
+    "Protection order",
+    "Residence order",
+    "Monetary relief",
+    "Custody order"
+  ],
+
+  "exampleScenario": {
+    "situation": "A husband prevents his wife from working and controls all finances.",
+    "isViolation": true,
+    "explanation": "Economic control is a form of domestic violence."
+  },
+
+  "stepByStepAction": [
+    "Contact women helpline or police",
+    "Approach Protection Officer",
+    "File complaint before Magistrate",
+    "Seek interim protection order"
+  ],
+
+  "emergencyContacts": [
+    {
+      "service": "Women Helpline",
+      "number": "181"
+    },
+    {
+      "service": "Police",
+      "number": "112"
+    }
+  ],
+
+  "severity": "CRITICAL"
+}
